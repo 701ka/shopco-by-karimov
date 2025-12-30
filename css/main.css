@@ -1,0 +1,1640 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "FONTSPRING DEMO - Integral CF";
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFMediumItalic.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFMediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Integral CF";
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFMediumRegular.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFMediumRegular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Integral CF";
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFHeavyItalic.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFHeavyItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Integral CF Demi";
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFDemiBoldRegular.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFDemiBoldRegular.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Integral CF Extra";
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFExtraBoldItalic.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Integral CF Extra";
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFExtraBoldRegular.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFExtraBoldRegular.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Integral CF Demi";
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFDemiBoldItalic.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFDemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Integral CF";
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFBoldItalic.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Integral CF";
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFBoldRegular.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFBoldRegular.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Integral CF";
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFRegular.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Integral CF";
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFHeavyRegular.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFHeavyRegular.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Integral CF";
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFItalic.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Black.woff2") format("woff2"), url("../fonts/Satoshi-Black.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-BlackItalic.woff2") format("woff2"), url("../fonts/Satoshi-BlackItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"), url("../fonts/Satoshi-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Light.woff2") format("woff2"), url("../fonts/Satoshi-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Italic.woff2") format("woff2"), url("../fonts/Satoshi-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "false";
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2"), url("../fonts/Satoshi-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi Variable";
+  src: url("../fonts/SatoshiVariable-BoldItalic.woff2") format("woff2"), url("../fonts/SatoshiVariable-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-LightItalic.woff2") format("woff2"), url("../fonts/Satoshi-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi Variable";
+  src: url("../fonts/SatoshiVariable-Bold.woff2") format("woff2"), url("../fonts/SatoshiVariable-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"), url("../fonts/Satoshi-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "false";
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-MediumItalic.woff2") format("woff2"), url("../fonts/Satoshi-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Black.woff2") format("woff2"), url("../fonts/Satoshi-Black.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-BlackItalic.woff2") format("woff2"), url("../fonts/Satoshi-BlackItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "false";
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "false";
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"), url("../fonts/Satoshi-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "false";
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Light.woff2") format("woff2"), url("../fonts/Satoshi-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Italic.woff2") format("woff2"), url("../fonts/Satoshi-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "false";
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+main {
+  position: relative;
+}
+
+header {
+  padding: 36px 0;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "FONTSPRING DEMO - Integral CF";
+}
+
+.header__dots {
+  display: none;
+}
+
+.header__title::-moz-selection {
+  color: #fff;
+  background-color: #000;
+}
+
+.header__title::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+.header__title {
+  font-size: 32px;
+  color: #000;
+  font-family: "FONTSPRING DEMO - Integral CF";
+  font-weight: 700;
+}
+
+.header__list {
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+
+.header__item::-moz-selection {
+  color: #fff;
+  background-color: #000;
+}
+
+.header__item::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+.header__item {
+  font-family: "Satoshi";
+  cursor: pointer;
+}
+
+.header__input {
+  display: flex;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  background-color: #f0f0f0;
+  border-radius: 62px;
+}
+
+.arrow__down {
+  font-size: 12px;
+}
+
+.header__icon {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 24px;
+}
+
+.header__inp::-moz-placeholder {
+  font-size: 16px;
+  font-family: "Satoshi";
+}
+
+.header__inp::placeholder {
+  font-size: 16px;
+  font-family: "Satoshi";
+}
+
+.header__inp {
+  background-color: transparent;
+  width: 500px;
+}
+
+.header__user-pic {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+}
+
+.user__shop {
+  font-size: 22px;
+}
+
+.user__pic {
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 391px) {
+  header {
+    padding: 23px 0;
+  }
+  .header__title {
+    font-size: 25.2px;
+    margin-left: -4px;
+  }
+  .header__inp {
+    display: none;
+  }
+  .header__input {
+    background: transparent;
+  }
+  .header__icon {
+    color: #000;
+    margin-right: -40px;
+  }
+  .header__list {
+    display: none;
+  }
+  .header__inner {
+    justify-content: space-evenly;
+  }
+  .header__dots {
+    display: block;
+    margin-right: -30px;
+    margin-top: 3px;
+    margin-left: -40px;
+  }
+  .header__user-pic {
+    margin-right: -40px;
+  }
+}
+.hero {
+  padding-top: 103px;
+  padding-bottom: 136px;
+  background-image: url("../../src/yulduzcha.png"), url("../../src/yulduzcha.png"), url("../../src/couple.jpg");
+  background-repeat: no-repeat;
+  background-size: 56px 56px, 104px 104px, 700px 1000px;
+  background-position: calc(50% + 40px) calc(50% - 3px), calc(50% + 850px) calc(50% - 200px), calc(50% + 500px) calc(50% + 100px);
+  background-color: #f2f0f1;
+}
+.hero .hero__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.hero .hero__title::-moz-selection {
+  background-color: #000;
+  color: #f2f0f1;
+}
+.hero .hero__title::selection {
+  background-color: #000;
+  color: #f2f0f1;
+}
+.hero .hero__title {
+  font-size: 64px;
+  font-family: "FONTSPRING DEMO - Integral CF";
+  color: #000;
+  width: 577px;
+  line-height: 64px;
+}
+.hero .hero__text::-moz-selection {
+  background-color: #000;
+  color: #f2f0f1;
+}
+.hero .hero__text::selection {
+  background-color: #000;
+  color: #f2f0f1;
+}
+.hero .hero__text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+  font-family: "Satoshi";
+  width: 545px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.hero .hero__link {
+  font-family: "Satoshi";
+  color: #fff;
+  font-size: 16px;
+  background-color: #000;
+  border-radius: 62px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 12px 67px;
+  font-weight: 500;
+}
+.hero .hero__list::-moz-selection {
+  background-color: #000;
+  color: #f2f0f1;
+}
+.hero .hero__list::selection {
+  background-color: #000;
+  color: #f2f0f1;
+}
+.hero .hero__list {
+  display: flex;
+  -moz-column-gap: 64px;
+       column-gap: 64px;
+  font-family: "Satoshi";
+}
+.hero .hero__item {
+  display: flex;
+  flex-direction: column;
+  padding-right: 32px;
+  border-right: 3px solid rgba(0, 0, 0, 0.1019607843);
+}
+.hero .hero__item:nth-child(3) {
+  border: none;
+  padding: 0;
+}
+.hero .hero__subtitle {
+  font-size: 40px;
+}
+.hero .hero__inf {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 391px) {
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 480px;
+    background-size: 44px 44px, 76px 76px, 500px 700px;
+    background-position: calc(50% - 150px) calc(50% + 200px), calc(50% + 150px) calc(50% + 100px), 50% calc(50% + 330px);
+  }
+  .hero .hero__title {
+    line-height: 34px;
+    font-size: 36px;
+    width: 315px;
+  }
+  .hero .hero__text {
+    line-height: 20px;
+    font-size: 14px;
+    width: 340px;
+  }
+  .hero .hero__link {
+    font-size: 16px;
+    padding: 15px 141px;
+  }
+  .hero .hero__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    -moz-column-gap: 27px;
+         column-gap: 27px;
+    row-gap: 12px;
+  }
+  .hero .hero__subtitle {
+    font-size: 24px;
+  }
+  .hero .hero__inf {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .hero .hero__item {
+    padding-right: 27px;
+  }
+  .hero .hero__item:nth-child(2) {
+    border: none;
+    padding: 0;
+  }
+}
+.brands {
+  background-color: #000;
+  padding: 40px 0;
+}
+.brands .brands__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 391px) {
+  .brands {
+    padding: 38px 0;
+  }
+  .brands .brands__inner {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .brands .brands__img:nth-child(4) {
+    width: 134px;
+    height: 21px;
+  }
+  .brands .brands__img:nth-child(4) {
+    width: 127px;
+    height: 21px;
+  }
+  .brands .brands__img:nth-child(3) {
+    width: 110px;
+    height: 25px;
+  }
+  .brands .brands__img:nth-child(2) {
+    width: 63px;
+    height: 26px;
+  }
+  .brands .brands__img:nth-child(1) {
+    width: 116px;
+    height: 23px;
+  }
+}
+.rating .star {
+  font-size: 24px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.rating .star.active {
+  color: #ffc633;
+}
+
+.new {
+  padding-top: 72px;
+  padding-bottom: 64px;
+}
+
+.new__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Satoshi";
+}
+
+.new__title::-moz-selection {
+  color: #fff;
+  background-color: #000;
+}
+
+.new__title::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+.new__subtitle::-moz-selection {
+  color: #fff;
+  background-color: #000;
+}
+
+.new__subtitle::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+.new__title {
+  font-size: 48px;
+  font-family: "FONTSPRING DEMO - Integral CF";
+}
+
+.new__list {
+  display: flex;
+  margin-top: 60px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+
+.new__percentage {
+  padding: 6px 13px;
+}
+
+.none {
+  display: none;
+}
+
+.new__item {
+  display: flex;
+  flex-direction: column;
+}
+.new__item:nth-child(2) .new__sale {
+  padding: 6px 13px;
+}
+.new__item:nth-child(4) .new__sale {
+  padding: 6px 13px;
+}
+
+.new__img {
+  height: 280px;
+  border-radius: 20px;
+  width: 126%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.new__rating {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  align-items: center;
+}
+
+.new__subtitle {
+  font-size: 18px;
+  text-transform: lowercase;
+  margin-top: 12px;
+}
+.new__subtitle span {
+  text-transform: uppercase;
+}
+
+.new__price {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  align-items: center;
+}
+
+.new__real_price {
+  font-size: 24px;
+}
+
+.new__del_price {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+.new__sale {
+  color: #ff3333;
+  font-size: 12px;
+  background-color: rgba(255, 51, 51, 0.1019607843);
+  border-radius: 62px;
+  font-weight: 500;
+}
+
+.new__link {
+  color: #000;
+  padding: 15px 80px;
+  border-radius: 62px;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  margin-top: 36px;
+}
+
+.line {
+  background-color: rgba(0, 0, 0, 0.1019607843);
+  display: block;
+  max-width: 1200px;
+  height: 4px;
+  border-radius: 12px;
+  margin: 50px 0;
+}
+
+.new__link_pr {
+  color: inherit;
+}
+
+@media (max-width: 391px) {
+  .new {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .new__title {
+    font-size: 32px;
+  }
+  .new__img {
+    height: 200px;
+    width: 198px;
+  }
+  .new__subtitle {
+    font-size: 16px;
+  }
+  .rating .star {
+    font-size: 15px;
+  }
+  .new__rating__text {
+    font-size: 12px;
+  }
+  .new__rating {
+    -moz-column-gap: 11px;
+         column-gap: 11px;
+  }
+  .new__real_price {
+    font-size: 20px;
+  }
+  .new__list {
+    -moz-column-gap: 11px;
+         column-gap: 11px;
+    width: 374px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .new__del_price {
+    font-size: 20px;
+  }
+  .new__sale {
+    font-size: 10px;
+  }
+  .new__item:nth-child(2) .new__sale {
+    padding: 3px 6px;
+  }
+  .new__item:nth-child(4) .new__sale {
+    padding: 3px 6px;
+  }
+  .new__link {
+    padding: 13px 140px;
+  }
+}
+.style {
+  padding-top: 80px;
+}
+
+.style__inner {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 64px 76px;
+  font-family: "FONTSPRING DEMO - Integral CF";
+  background-color: #f0f0f0;
+  border-radius: 40px;
+  row-gap: 64px;
+}
+
+.style__title {
+  font-size: 48px;
+  text-align: center;
+}
+
+.style__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+  font-family: "Satoshi";
+}
+
+.style__item:nth-child(4) {
+  padding: 25px 257px 215px 36px;
+  background-image: url("../../src/style__img_gym.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.style__item:nth-child(3) {
+  grid-column: 1/3;
+  background-image: url("../../src/style__img_gurl.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 25px 532px 215px 36px;
+}
+
+.style__item:nth-child(2) {
+  grid-column: 2/4;
+  padding: 25px 532px 215px 36px;
+  background-image: url("../../src/style__image 13.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.style__item:nth-child(1) {
+  padding: 25px 257px 215px 36px;
+  grid-column: 1/2;
+  background-image: url("../../src/style__img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.style__item {
+  background-color: #fff;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+@media (max-width: 391px) {
+  .style {
+    padding-top: 50px;
+  }
+  .style__title {
+    line-height: 36px;
+    font-size: 32px;
+    width: 246px;
+    margin: 0 auto;
+  }
+  .style__inner {
+    padding: 40px 24px;
+    row-gap: 28px;
+  }
+  .style__list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 16px;
+  }
+  .style__item:nth-child(2) {
+    grid-column: 1/2;
+    padding: 16px 209px 142px 24px;
+    background-size: cover;
+    background-position: -69px 0;
+  }
+  .style__item:nth-child(3) {
+    grid-column: 1/2;
+    padding: 16px 209px 142px 24px;
+    background-size: cover;
+    background-position: -69px 0;
+  }
+  .style__item:nth-child(4) {
+    grid-column: 1/2;
+    padding: 16px 209px 142px 24px;
+  }
+  .style__item:nth-child(1) {
+    grid-column: 1/2;
+    padding: 16px 209px 142px 24px;
+  }
+  .style__item {
+    font-size: 24px;
+  }
+}
+.captions {
+  padding: 80px 0;
+}
+
+.scroll-x-section {
+  display: flex;
+  overflow-x: auto; /* foydalanuvchi qo‘lda scroll qilmaydi */
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.caption__list {
+  overflow-x: auto;
+}
+
+.testimonial {
+  flex: 0 0 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: filter 0.3s ease;
+  filter: blur(3px); /* default blur */
+}
+
+/* Gradient effekt chap/ong tomonda */
+.scroll-x-section::before,
+.scroll-x-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.scroll-x-section::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), transparent);
+}
+
+.scroll-x-section::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.9), transparent);
+}
+
+.testimonial.visible {
+  filter: blur(0);
+}
+
+.caption__title {
+  font-family: "FONTSPRING DEMO - Integral CF";
+}
+
+.caption__item_inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.caption__name {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+
+.captions__subtitle {
+  font-size: 20px;
+  line-height: 22px;
+  font-family: "Satoshi";
+}
+
+.captions__icon {
+  font-size: 20px;
+}
+
+.captions__text {
+  font-family: "Satoshi";
+  width: 306px;
+  line-height: 22px;
+  text-align: left;
+}
+
+::-webkit-scrollbar {
+  color: #000;
+}
+
+.caption__item {
+  padding: 28px 32px 50px 32px;
+}
+
+@media (max-width: 391px) {
+  .caption__list {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .caption__item {
+    display: none;
+  }
+  .caption__item:nth-child(1) {
+    display: inline-block;
+    row-gap: 12px;
+  }
+  .caption__item {
+    padding: 24px;
+  }
+  .captions__icon {
+    font-size: 15px;
+  }
+  .caption__title {
+    font-size: 16px;
+  }
+  .captions__text {
+    font-size: 14px;
+  }
+  .scroll-x-section::before,
+  .scroll-x-section::after {
+    display: none;
+  }
+  .caption__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .caption__list {
+    padding: 0;
+    margin-top: 24px;
+  }
+}
+.offer {
+  background-color: #000;
+  color: #fff;
+  padding: 24px 64px;
+  border-radius: 20px;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: -70px;
+  z-index: 100;
+}
+.offer .container {
+  padding: 0;
+}
+
+.offer__inner {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 214px;
+       column-gap: 214px;
+}
+
+.offer__title {
+  font-size: 40px;
+  line-height: 45px;
+  font-family: "FONTSPRING DEMO - Integral CF";
+  width: 550px;
+}
+
+.offer__right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.offer__input_bg {
+  background-color: #fff;
+  border-radius: 62px;
+  display: flex;
+  align-items: center;
+}
+
+.offer__icon_bg {
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.offer_icon {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.offer__input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "Satoshi";
+}
+
+.offer__input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "Satoshi";
+}
+
+.offer__input {
+  padding: 12px 124px 14px 12px;
+  border-radius: 62px;
+}
+
+.offer__btn {
+  padding: 12px 88.5px;
+  border-radius: 62px;
+}
+
+.offer__link {
+  color: #000;
+  font-weight: 500;
+  font-family: "Satoshi";
+}
+
+@media (max-width: 391px) {
+  .offer {
+    padding: 22px 27px 28px 24px;
+  }
+  .offer__inner {
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  .offer__title {
+    font-size: 32px;
+    line-height: 35px;
+    width: 297px;
+  }
+  .offer__input {
+    padding: 11.5px 112px 11s5px 3px;
+  }
+  .offer__icon {
+    font-size: 20px;
+  }
+  .offer__link {
+    font-size: 14px;
+  }
+}
+.footer {
+  padding-top: 132px;
+  background-color: #f0f0f0;
+  z-index: -1;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo_link {
+  font-size: 33.45px;
+  color: #000;
+  font-family: "FONTSPRING DEMO - Integral CF";
+  font-weight: 700;
+}
+
+.footer__text {
+  font-family: "Satoshi";
+  width: 248px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer__icon_list {
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+
+.footer__item_icon:hover {
+  background-color: #000;
+}
+.footer__item_icon:hover .footer__icon_link {
+  color: #fff;
+}
+
+.footer__item_icon {
+  padding: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  transition: all ease 0.3s;
+}
+
+.footer__icon_link {
+  color: #000;
+  transition: all ease 0.3s;
+}
+
+.footer__icon {
+  font-size: 15px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+}
+
+.footer__subtitle {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Satoshi";
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.footer__href {
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Satoshi";
+}
+
+.footer__line {
+  max-width: 1240px;
+  height: 2px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1019607843);
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__botm_text {
+  font-family: "Satoshi";
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer__pay_list {
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+
+.footer__pay_item {
+  padding: 9px;
+  background-color: #fff;
+  border-radius: 5.38px;
+}
+
+@media (max-width: 391px) {
+  .footer__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 89px;
+  }
+  .footer__left {
+    grid-column: 1/3;
+  }
+  .footer__links {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  .footer__list {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+  .footer__href {
+    font-size: 14px;
+  }
+  .footer__subtitle {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 3px;
+  }
+  .footer__text {
+    font-size: 14px;
+    width: 357px;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .footer__botm_text {
+    font-size: 14px;
+  }
+}
+.product {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.product__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+
+.product__left {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.product__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  justify-content: center;
+}
+
+.product__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
+.product__img:focus {
+  border: 1px solid #000;
+}
+
+.product__img_bg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
+.product__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__title {
+  font-family: "FONTSPRING DEMO - Integral CF";
+  font-size: 38px;
+  display: flex;
+  align-items: center;
+}
+.product__title span {
+  font-family: serif;
+  margin-top: 3px;
+  font-weight: 700;
+}
+
+.product__rating {
+  display: inline-flex;
+  align-items: center;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+  margin: 14px 0;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.product__rating_text {
+  font-family: "Satoshi";
+  font-size: 14px;
+}
+.product__rating_text span {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.product__price {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  font-family: "Satoshi";
+}
+
+.product__real_price {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.product_del {
+  font-weight: 700;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.3019607843);
+}
+
+.product__charge {
+  color: #ff3333;
+  padding: 6px 14px;
+  border-radius: 62px;
+  background-color: rgba(255, 51, 51, 0.3843137255);
+}
+
+.product__text {
+  font-family: "Satoshi";
+  line-height: 22px;
+  width: 590px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 24px;
+  margin-top: 20px;
+}
+
+.product__color {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 24px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1019607843);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+
+.color__title {
+  font-family: "Satoshi";
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.color__list {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
+.color__item {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}
+.color__item:nth-child(1) {
+  background-color: #4f4631;
+}
+.color__item:nth-child(2) {
+  background-color: #314f4a;
+}
+.color__item:nth-child(3) {
+  background-color: #31344f;
+}
+
+.product__size {
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+
+.size__title {
+  font-family: "Satoshi";
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.size__list {
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  margin-top: 16px;
+}
+
+.size__item:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.size__item {
+  font-weight: 500;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  padding: 12px 24px;
+  background-color: #f0f0f0;
+  color: rgba(0, 0, 0, 0.6);
+  border-radius: 62px;
+  font-family: "Satoshi";
+}
+
+.right__bottom {
+  padding-top: 12px;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.right__counter {
+  display: flex;
+  -moz-column-gap: 38px;
+       column-gap: 38px;
+  align-items: center;
+  padding: 0px 20px;
+  border-radius: 62px;
+  background-color: #f0f0f0;
+}
+
+.right__minus {
+  font-size: 35px;
+  font-family: "Satoshi";
+  margin-bottom: 5px;
+}
+
+.right__number {
+  font-size: 20px;
+  font-family: "Satoshi";
+}
+
+.right__plus {
+  font-size: 23px;
+  font-family: "Satoshi";
+}
+
+.product__btn {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Satoshi";
+  background-color: #000;
+  color: #fff;
+  padding: 15px 157px;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 62px;
+}
+
+@media (max-width: 391px) {
+  .product__inner {
+    flex-direction: column;
+  }
+  .product__left {
+    flex-direction: column-reverse;
+  }
+  .product__list {
+    flex-direction: row;
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+  .product__right {
+    margin: 0 auto;
+  }
+  .product__img_bg {
+    width: 358px;
+    height: 290px;
+  }
+  .product__img {
+    width: 111px;
+    height: 106px;
+  }
+  .product__title {
+    font-size: 24px;
+    line-height: 28px;
+    width: 250px;
+  }
+  .product__price {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .product__text {
+    max-width: 358px;
+  }
+  .color__title {
+    font-size: 14px;
+  }
+  .color__list {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+  .color__item {
+    width: 39px;
+    height: 39px;
+  }
+  .size__title {
+    font-size: 14px;
+  }
+  .product__btn {
+    padding: 12.5px 78px;
+  }
+  .size__item {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .size__list {
+    justify-content: space-between;
+  }
+  .right__bottom {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+  .right__counter {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  .right__minus {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+  .right__plus {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */

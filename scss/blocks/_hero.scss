@@ -1,0 +1,120 @@
+.hero {
+  padding-top: 103px;
+  padding-bottom: 136px;
+  background-image: url("../../src/yulduzcha.png"),
+    url("../../src/yulduzcha.png"), url("../../src/couple.jpg");
+  background-repeat: no-repeat;
+  background-size: 56px 56px, 104px 104px, 700px 1000px;
+  background-position: calc(50% + 40px) calc(50% - 3px),
+    calc(50% + 850px) calc(50% - 200px), calc(50% + 500px) calc(50% + 100px);
+  background-color: #f2f0f1;
+
+  .hero__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  .hero__title::selection {
+    background-color: $main-color;
+    color: #f2f0f1;
+  }
+  .hero__title {
+    font-size: 64px;
+    font-family: $main-font;
+    color: $main-color;
+    width: 577px;
+    line-height: 64px;
+  }
+  .hero__text::selection {
+    background-color: $main-color;
+    color: #f2f0f1;
+  }
+  .hero__text {
+    font-size: 16px;
+    line-height: 22px;
+    color: $main-color;
+    font-family: $second-font;
+    width: 545px;
+    color: #00000099;
+  }
+  .hero__link {
+    font-family: $second-font;
+    color: $bg-second-color;
+    font-size: 16px;
+    background-color: $main-color;
+    border-radius: 62px;
+    width: max-content;
+    padding: 12px 67px;
+    font-weight: 500;
+  }
+  .hero__list::selection {
+    background-color: $main-color;
+    color: #f2f0f1;
+  }
+  .hero__list {
+    display: flex;
+    column-gap: 64px;
+    font-family: $second-font;
+  }
+  .hero__item {
+    display: flex;
+    flex-direction: column;
+    padding-right: 32px;
+    border-right: 3px solid #0000001a;
+  }
+  .hero__item:nth-child(3) {
+    border: none;
+    padding: 0;
+  }
+  .hero__subtitle {
+    font-size: 40px;
+  }
+  .hero__inf {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 391px) {
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 480px;
+    background-size: 44px 44px, 76px 76px, 500px 700px;
+    background-position: calc(50% - 150px) calc(50% + 200px),
+      calc(50% + 150px) calc(50% + 100px), 50% calc(50% + 330px);
+    .hero__title {
+      line-height: 34px;
+      font-size: 36px;
+      width: 315px;
+    }
+    .hero__text {
+      line-height: 20px;
+      font-size: 14px;
+      width: 340px;
+    }
+    .hero__link {
+      font-size: 16px;
+      padding: 15px 141px;
+    }
+    .hero__list {
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 27px;
+      row-gap: 12px;
+      // margin: 0 auto;
+    }
+    .hero__subtitle {
+      font-size: 24px;
+    }
+    .hero__inf {
+      font-size: 12px;
+      line-height: 22px;
+    }
+    .hero__item {
+      padding-right: 27px;
+    }
+
+    .hero__item:nth-child(2) {
+      border: none;
+      padding: 0;
+    }
+  }
+}

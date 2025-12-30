@@ -1,0 +1,124 @@
+.captions {
+  padding: 80px 0;
+}
+
+.scroll-x-section {
+  display: flex;
+  overflow-x: auto; /* foydalanuvchi qo‘lda scroll qilmaydi */
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  // white-space: nowrap;
+}
+.caption__list {
+  overflow-x: auto;
+}
+
+.testimonial {
+  flex: 0 0 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: filter 0.3s ease;
+  filter: blur(3px); /* default blur */
+}
+
+/* Gradient effekt chap/ong tomonda */
+
+.scroll-x-section::before,
+.scroll-x-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.scroll-x-section::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), transparent);
+}
+
+.scroll-x-section::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.9), transparent);
+}
+
+.testimonial.visible {
+  filter: blur(0);
+}
+
+.caption__title {
+  font-family: $main-font;
+}
+
+.caption__item_inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.caption__name {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.captions__subtitle {
+  font-size: 20px;
+  line-height: 22px;
+  font-family: $second-font;
+}
+.captions__icon {
+  font-size: 20px;
+}
+.captions__text {
+  font-family: $second-font;
+  width: 306px;
+  line-height: 22px;
+  text-align: left;
+}
+::-webkit-scrollbar {
+  color: $main-color;
+}
+.caption__item {
+  padding: 28px 32px 50px 32px;
+}
+@media (max-width: 391px) {
+  .caption__list {
+    width: max-content;
+  }
+  .caption__item {
+    &:nth-child(1) {
+      display: inline-block;
+      row-gap: 12px;
+    }
+    display: none;
+  }
+  .caption__item {
+    padding: 24px;
+  }
+  .captions__icon {
+    font-size: 15px;
+  }
+  .caption__title {
+    font-size: 16px;
+  }
+  .captions__text {
+    font-size: 14px;
+  }
+  .scroll-x-section::before,
+  .scroll-x-section::after {
+    display: none;
+  }
+  .caption__title { 
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .caption__list {
+    padding: 0;
+    margin-top: 24px;
+  }
+}
