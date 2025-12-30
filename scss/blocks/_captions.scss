@@ -66,6 +66,10 @@
   align-items: center;
   column-gap: 5px;
 }
+.captions__subtitle::selection {
+  color: $bg-second-color;
+  background-color: $main-color;
+}
 .captions__subtitle {
   font-size: 20px;
   line-height: 22px;
@@ -73,6 +77,7 @@
 }
 .captions__icon {
   font-size: 20px;
+  color: $green-color;
 }
 .captions__text {
   font-family: $second-font;
@@ -113,7 +118,7 @@
   .scroll-x-section::after {
     display: none;
   }
-  .caption__title { 
+  .caption__title {
     font-size: 32px;
     line-height: 36px;
   }

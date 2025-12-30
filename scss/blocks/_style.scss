@@ -10,6 +10,14 @@
   border-radius: 40px;
   row-gap: 64px;
 }
+.style__title::selection {
+  color: $bg-second-color;
+  background-color: $main-color;
+}
+.style__item::selection {
+  color: $bg-second-color;
+  background-color: $main-color;
+}
 .style__title {
   font-size: 48px;
   text-align: center;
