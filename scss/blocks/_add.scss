@@ -1,0 +1,62 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 0.8fr 8fr;
+  height: 100vh;
+}
+.sidebar {
+  grid-row: 1 / 3;
+  background-color: orange;
+  padding-left: 25px;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add__header {
+  background-color: red;
+}
+
+.add__product {
+  background-color: aqua;
+}
+.add__btn_wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+  padding-right: 84px;
+  padding-top: 34px;
+}
+.add__title {
+  font-family: $main-font;
+  padding-bottom: 25px;
+  font-size: 49px;
+}
+.add__btn {
+  padding: 18px 0;
+  font-family: $main-font;
+  background-color: $main-color;
+  color: $bg-second-color;
+  border-radius: 10px;
+  font-size: 24px;
+}
+.add__inp_wrapper {
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin-top: 5s0%;
+}
+.add__inp_info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.add__range {
+  width: 100%;
+}
+.add__btn_modal {
+  font-family: $main-font;
+  color: $bg-second-color;
+  background-color: $bg-color;
+}

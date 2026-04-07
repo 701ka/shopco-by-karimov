@@ -24,3 +24,10 @@ input {
 main {
   position: relative;
 }
+button {
+  cursor: pointer;
+  &:active {
+    transform: scale(0.96);
+  }
+  transition: transform 0.2s ease;
+}

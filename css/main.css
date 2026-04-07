@@ -326,6 +326,16 @@ main {
   position: relative;
 }
 
+button {
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.96);
+}
+button {
+  transition: transform 0.2s ease;
+}
+
 header {
   padding: 36px 0;
 }
@@ -1073,12 +1083,12 @@ header {
     width: -moz-max-content;
     width: max-content;
   }
-  .caption__item {
-    display: none;
-  }
   .caption__item:nth-child(1) {
     display: inline-block;
     row-gap: 12px;
+  }
+  .caption__item {
+    display: none;
   }
   .caption__item {
     padding: 24px;
@@ -1893,4 +1903,74 @@ header {
   .rew__item {
     padding: 24px;
   }
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 0.8fr 8fr;
+  height: 100vh;
+}
+
+.sidebar {
+  grid-row: 1/3;
+  background-color: orange;
+  padding-left: 25px;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add__header {
+  background-color: red;
+}
+
+.add__product {
+  background-color: aqua;
+}
+
+.add__btn_wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+  padding-right: 84px;
+  padding-top: 34px;
+}
+
+.add__title {
+  font-family: "FONTSPRING DEMO - Integral CF";
+  padding-bottom: 25px;
+  font-size: 49px;
+}
+
+.add__btn {
+  padding: 18px 0;
+  font-family: "FONTSPRING DEMO - Integral CF";
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+.add__inp_wrapper {
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin-top: 5s0 %;
+}
+
+.add__inp_info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.add__range {
+  width: 100%;
+}
+
+.add__btn_modal {
+  font-family: "FONTSPRING DEMO - Integral CF";
+  color: #fff;
+  background-color: #f0f0f0;
 }/*# sourceMappingURL=main.css.map */
