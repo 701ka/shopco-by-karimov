@@ -15,44 +15,59 @@
     />
     <!-- font awesome link -->
   </head>
-  <div class="add__modal" id="modal">
-    <div class="add__modal_content">
-      <h2 class="add__modal_title">ADDING NEW PRODUCT</h2>
 
-      <div class="add__form">
-        <input type="text" placeholder="Product Name" class="add__input" />
+  <body>
+    <div class="add__modal" id="modal">
+      <div class="add__modal_content">
+        <h2 class="add__modal_title">ADDING NEW PRODUCT</h2>
 
-        <div class="add__upload_wrapper">
-          <div class="add__upload">
-            <p class="add__upload_text">Upload</p>
+        <form class="add__form">
+          <input
+            type="text"
+            name="name"
+            placeholder="Product Name"
+            class="add__input"
+          />
+          <div class="add__upload_wrapper">
+            <div class="add__upload">
+              <i class="fa-solid fa-cloud-arrow-down add__modal_icon"></i>
+              <p class="add__upload_text">Upload</p>
+            </div>
+            <div class="add__upload">
+              <i class="fa-solid fa-cloud-arrow-down add__modal_icon"></i>
+              <p class="add__upload_text">Upload</p>
+            </div>
+            <div class="add__upload">
+              <i class="fa-solid fa-cloud-arrow-down add__modal_icon"></i>
+              <p class="add__upload_text">Upload</p>
+            </div>
           </div>
-          <div class="add__upload">
-            <p class="add__upload_text">Upload</p>
+          <div class="add__row add__row_top">
+            <input
+              type="number"
+              name="price"
+              placeholder="Price"
+              class="add__input"
+            />
+            <input
+              type="number"
+              name="discount"
+              placeholder="Discount"
+              class="add__input"
+            />
           </div>
-          <div class="add__upload">
-            <p class="add__upload_text">Upload</p>
+          <div class="add__row add__row_bot">
+            <select name="category" class="add__input">
+              <option selected disabled>Category</option>
+            </select>
+            <select name="type" class="add__input">
+              <option selected disabled>Type</option>
+            </select>
           </div>
-        </div>
-
-        <div class="add__row add__row_top">
-          <input type="number" placeholder="Price" class="add__input" />
-          <input type="number" placeholder="Discount" class="add__input" />
-        </div>
-
-        <div class="add__row add__row_bot">
-          <select class="add__input">
-            <option selected disabled>Category</option>
-          </select>
-          <select class="add__input">
-            <option selected disabled>Type</option>
-          </select>
-        </div>
-
-        <button class="add__submit">+ Add product</button>
+          <button type="submit" class="add__submit">+ Add product</button>
+        </form>
       </div>
     </div>
-  </div>
-  <body>
     <main class="main">
       <aside class="sidebar">
         <h2 class="add__title">shop.co</h2>
@@ -87,6 +102,33 @@
               </div>
               <div class="icon__inner trash_wrapper">
                 <i class="fa-solid fa-trash add__new_icon trash"></i>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="add__product">
+          <li class="add__product__item">
+            <p class="add__product__number">1</p>
+            <img
+              src="./src/stripped.png"
+              width="100"
+              height="88"
+              alt=""
+              class="add__product__img"
+            />
+            <p class="add__product__name">T-Shirt</p>
+            <p class="add__product__price">85$</p>
+            <p class="add__product__discount">-20%</p>
+            <div class="add__product__star_wrapper">
+              <p class="add__product__star_counter">5</p>
+              <i class="fa-solid fa-star add__product__star_icon"></i>
+            </div>
+            <div class="add__product_icon_wrapper">
+              <div class="icon__inner">
+                <i class="fa-solid fa-pencil add__product_icon pencil"></i>
+              </div>
+              <div class="icon__inner trash_wrapper">
+                <i class="fa-solid fa-trash add__product_icon trash"></i>
               </div>
             </div>
           </li>
