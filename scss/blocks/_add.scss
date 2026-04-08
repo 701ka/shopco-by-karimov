@@ -12,13 +12,17 @@
   display: flex;
   flex-direction: column;
 }
-
 .add__header {
   background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 25px 25px 12px 0;
 }
-
 .add__product {
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  padding-top: 40px;
 }
 .add__btn_wrapper {
   display: flex;
@@ -45,7 +49,7 @@
   display: flex;
   flex-direction: column;
   justify-self: center;
-  margin-top: 5s0%;
+  margin-top: 50%;
 }
 .add__inp_info {
   display: flex;
@@ -58,5 +62,106 @@
 .add__btn_modal {
   font-family: $main-font;
   color: $bg-second-color;
-  background-color: $bg-color;
+  background-color: $main-color;
+  padding: 19px 17px;
+  border-radius: 10px;
+}
+.add__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid $grey;
+  width: max-content;
+}
+.add__nav_icon_wrapper {
+  display: flex;
+  margin-left: 80px;
+  column-gap: 5px;
+}
+.icon__inner {
+  padding: 3px 4px;
+  background-color: $purple;
+  border-radius: 5px;
+}
+.add__nav_text {
+  font-family: $main-font;
+  color: $main-color;
+}
+.add__nav_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 19px 30px;
+  border-right: 1px solid $grey;
+  &:last-child {
+    border: none;
+  }
+}
+.pencil {
+  color: $bg-second-color;
+}
+.trash {
+  color: $bg-second-color;
+}
+.trash_wrapper {
+  background-color: $red;
+}
+.add__modal {
+  font-family: $main-font;
+  position: fixed;
+  top: 0;
+  right: -500px;
+  width: 400px;
+  height: 100%;
+  background: #f5f5f5;
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+.add__modal.active {
+  right: 0;
+}
+.add__modal_content {
+  padding: 30px;
+}
+.add__modal_title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.add__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.add__input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.add__row {
+  display: flex;
+  gap: 10px;
+}
+.add__upload_wrapper {
+  display: flex;
+  gap: 10px;
+}
+.add__upload {
+  flex: 1;
+  padding: 20px;
+  background: white;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.add__submit {
+  background: black;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+}
+.add__row_bot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

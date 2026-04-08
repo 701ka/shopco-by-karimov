@@ -5,7 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font awesome link -->
   </head>
+  <div class="add__modal" id="modal">
+    <div class="add__modal_content">
+      <h2 class="add__modal_title">ADDING NEW PRODUCT</h2>
+
+      <div class="add__form">
+        <input type="text" placeholder="Product Name" class="add__input" />
+
+        <div class="add__upload_wrapper">
+          <div class="add__upload">
+            <p class="add__upload_text">Upload</p>
+          </div>
+          <div class="add__upload">
+            <p class="add__upload_text">Upload</p>
+          </div>
+          <div class="add__upload">
+            <p class="add__upload_text">Upload</p>
+          </div>
+        </div>
+
+        <div class="add__row add__row_top">
+          <input type="number" placeholder="Price" class="add__input" />
+          <input type="number" placeholder="Discount" class="add__input" />
+        </div>
+
+        <div class="add__row add__row_bot">
+          <select class="add__input">
+            <option selected disabled>Category</option>
+          </select>
+          <select class="add__input">
+            <option selected disabled>Type</option>
+          </select>
+        </div>
+
+        <button class="add__submit">+ Add product</button>
+      </div>
+    </div>
+  </div>
   <body>
     <main class="main">
       <aside class="sidebar">
@@ -26,7 +72,26 @@
       <div class="add__header">
         <button class="add__btn_modal">+ Add product</button>
       </div>
-      <div class="add__product"></div>
+      <div class="add__product">
+        <ul class="add__nav">
+          <li class="add__nav_item"><p class="add__nav_text">T/R</p></li>
+          <li class="add__nav_item"><p class="add__nav_text">Image</p></li>
+          <li class="add__nav_item"><p class="add__nav_text">Name</p></li>
+          <li class="add__nav_item"><p class="add__nav_text">price</p></li>
+          <li class="add__nav_item"><p class="add__nav_text">discount</p></li>
+          <li class="add__nav_item">
+            <p class="add__nav_text">rate</p>
+            <div class="add__nav_icon_wrapper">
+              <div class="icon__inner">
+                <i class="fa-solid fa-pencil add__new_icon pencil"></i>
+              </div>
+              <div class="icon__inner trash_wrapper">
+                <i class="fa-solid fa-trash add__new_icon trash"></i>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </main>
 
     <script src="add.js"></script>
