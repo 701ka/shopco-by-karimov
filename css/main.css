@@ -1904,7 +1904,7 @@ header {
     padding: 24px;
   }
 }
-.main {
+.main2 {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 0.8fr 8fr;
