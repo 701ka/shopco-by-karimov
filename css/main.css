@@ -1932,6 +1932,7 @@ header {
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
   padding-top: 40px;
+  row-gap: 18px;
 }
 
 .add__btn_wrapper {
@@ -2180,4 +2181,54 @@ header {
   font-size: 20px;
   border-right: 1px solid #ccc;
   padding: 30px 40px;
+}
+
+.delete__alert {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+}
+
+.delete__alert_bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 50px;
+  padding: 58px 46px;
+  background-color: #fff;
+}
+
+.delete__alert__title {
+  font-family: "FONTSPRING DEMO - Integral CF";
+  font-size: 22px;
+  border-radius: 35px;
+}
+
+.delete__btn_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.delete__btn {
+  font-family: "FONTSPRING DEMO - Integral CF";
+  font-size: 20px;
+  padding: 11px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.delete__btn:nth-child(1) {
+  background-color: #94a8ee;
+}
+.delete__btn:nth-child(2) {
+  background-color: #ed3d3d;
 }/*# sourceMappingURL=main.css.map */

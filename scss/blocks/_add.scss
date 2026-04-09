@@ -23,6 +23,7 @@
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
   padding-top: 40px;
+  row-gap: $popular-font-size - 2px;
 }
 .add__btn_wrapper {
   display: flex;
@@ -230,4 +231,49 @@
   font-size: $popular-font-size;
   border-right: 1px solid $grey;
   padding: 30px 40px;
+}
+.delete__alert {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background-color: $whiteish;
+}
+.delete__alert_bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 50px;
+  padding: 58px 46px;
+  background-color: $bg-second-color;
+}
+.delete__alert__title {
+  font-family: $main-font;
+  font-size: $popular-font-size + 2;
+  border-radius: 35px;
+}
+
+.delete__btn_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+.delete__btn {
+  font-family: $main-font;
+  font-size: $popular-font-size;
+  padding: 11px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  &:nth-child(1) {
+    background-color: $purple;
+  }
+  &:nth-child(2) {
+    background-color: $red;
+  }
 }
