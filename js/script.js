@@ -20,3 +20,7 @@ document.querySelectorAll(".rating").forEach((rating) => {
     });
   });
 });
+const user = document.querySelector(".user__pic");
+user.addEventListener("click", () => {
+  window.location.href = "../html/register.html";
+});
