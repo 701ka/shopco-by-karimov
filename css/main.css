@@ -2233,7 +2233,30 @@ header {
   background-color: #ed3d3d;
 }
 
-/* From Uiverse.io by andrew-manzyk */
+.register::before {
+  content: "";
+  width: 812.56px;
+  height: 666.97px;
+  position: absolute;
+  background-color: #000;
+  top: -550px;
+  left: -1020px;
+  transform: rotate(-83.59deg);
+}
+.register::after {
+  content: "";
+  width: 469px;
+  height: 469px;
+  position: absolute;
+  background-color: #000;
+  top: 350px;
+  left: 920px;
+  transform: rotate(-74.2deg);
+}
+.register {
+  position: relative;
+}
+
 .register__body {
   display: flex;
   align-items: center;
@@ -2251,30 +2274,39 @@ header {
   letter-spacing: 3%;
   font-weight: 900;
 }
+.register__title::-moz-selection {
+  background-color: #000;
+  color: #fff;
+}
+.register__title::selection {
+  background-color: #000;
+  color: #fff;
+}
 
 .register__inp {
   outline: none;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #595959;
   font-family: "Satoshi";
   font-size: 18px;
   border-radius: 12px;
   padding: 6px 6px;
-  border: 1px solid #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2509803922);
   padding: 20px 20px 20px 27px;
   width: 100%;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2509803922);
 }
 
 .register__inp::-moz-placeholder {
   font-family: "Satoshi";
   font-size: 18px;
-  color: #fff;
+  color: #595959;
 }
 
 .register__inp::placeholder {
   font-family: "Satoshi";
   font-size: 18px;
-  color: #fff;
+  color: #595959;
 }
 
 .register__form {
@@ -2305,6 +2337,7 @@ header {
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5607843137);
   display: none;
+  z-index: 999;
 }
 
 .loader {
@@ -2528,4 +2561,15 @@ header {
   100% {
     background-position: 102% 0;
   }
+}
+.register__text {
+  font-family: "Satoshi";
+  color: #595959;
+  font-weight: 500;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.register__link {
+  color: #000;
 }/*# sourceMappingURL=main.css.map */

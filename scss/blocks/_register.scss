@@ -1,4 +1,27 @@
-/* From Uiverse.io by andrew-manzyk */
+.register {
+  &::before {
+    content: "";
+    width: 812.56px;
+    height: 666.97px;
+    position: absolute;
+    background-color: $main-color;
+    top: -550px;
+    left: -1020px;
+    transform: rotate(-83.59deg);
+  }
+  &::after {
+    content: "";
+    width: 469px;
+    height: 469px;
+    position: absolute;
+    background-color: $main-color;
+    top: 350px;
+    left: 920px;
+    transform: rotate(-74.2deg);
+  }
+  position: relative;
+}
+
 .register__body {
   display: flex;
   align-items: center;
@@ -14,23 +37,28 @@
   margin-bottom: 30px;
   letter-spacing: 3%;
   font-weight: 900;
+  &::selection {
+    background-color: $main-color;
+    color: $bg-second-color;
+  }
 }
 .register__inp {
   outline: none;
-  background-color: $main-color;
-  color: #fff;
+  background-color: $bg-second-color;
+  color: $dark-grey;
   font-family: $second-font;
   font-size: 18px;
   border-radius: 12px;
   padding: 6px 6px;
-  border: 1px solid #fff;
+  border: 1px solid $input-brdr-color;
   padding: 20px 20px 20px 27px;
   width: 100%;
+  box-shadow: 0 4px 10px 0 $input-brdr-color;
 }
 .register__inp::placeholder {
   font-family: $second-font;
   font-size: 18px;
-  color: #fff;
+  color: $dark-grey;
 }
 .register__form {
   display: flex;
@@ -58,6 +86,7 @@
   inset: 0;
   background-color: #0000008f;
   display: none;
+  z-index: 999;
 }
 .loader {
   --main-size: 4em;
@@ -306,4 +335,14 @@
   100% {
     background-position: 102% 0;
   }
+}
+.register__text {
+  font-family: $second-font;
+  color: $dark-grey;
+  font-weight: 500;
+  margin-top: 16px;
+  text-align: center;
+}
+.register__link {
+  color: $main-color;
 }
