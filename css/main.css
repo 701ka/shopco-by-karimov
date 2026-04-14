@@ -1986,13 +1986,12 @@ header {
 }
 
 .add__nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 0fr;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   border: 1px solid #ccc;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .add__nav_icon_wrapper {
@@ -2116,18 +2115,19 @@ header {
 }
 
 .add__product__item {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
   border: 1px solid #ccc;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 2fr 1fr 1fr 1fr 1fr;
 }
 
 .add__product__number {
   font-family: "Satoshi";
   font-size: 20px;
   font-weight: 300;
-  padding: 30px 40px;
+  padding: 30px;
   border-right: 1px solid #ccc;
 }
 
@@ -2138,14 +2138,14 @@ header {
 }
 
 .add__product__price {
-  padding: 30px 40px;
+  padding: 30px;
   border-right: 1px solid #ccc;
   font-size: 20px;
   font-family: "Satoshi";
 }
 
 .add__product__discount {
-  padding: 30px 40px;
+  padding: 30px;
   border-right: 1px solid #ccc;
   font-size: 20px;
   font-family: "Satoshi";
@@ -2182,6 +2182,7 @@ header {
   font-size: 20px;
   border-right: 1px solid #ccc;
   padding: 30px 40px;
+  flex: 2;
 }
 
 .delete__alert {
