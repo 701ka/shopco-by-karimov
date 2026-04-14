@@ -5,8 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Log in</title>
     <link rel="stylesheet" href="../css/main.css" />
+    <link
+      href="
+        https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css
+        "
+      rel="stylesheet"
+    />
   </head>
   <body class="register__body">
+    <div class="loader__wrapper">
+      <div class="loader">
+        <div class="text"><span>Loading</span></div>
+        <div class="text"><span>Loading</span></div>
+        <div class="text"><span>Loading</span></div>
+        <div class="text"><span>Loading</span></div>
+        <div class="text"><span>Loading</span></div>
+        <div class="text"><span>Loading</span></div>
+        <div class="text"><span>Loading</span></div>
+        <div class="text"><span>Loading</span></div>
+        <div class="text"><span>Loading</span></div>
+        <div class="line"></div>
+      </div>
+    </div>
     <section class="register">
       <div class="container">
         <h1 class="register__title" style="text-align: center">Log in</h1>
@@ -17,6 +37,7 @@
             id=""
             class="email__inp register__inp"
             placeholder="email"
+            value="aliyev30@gmail.com"
           /><input
             value="12345678"
             type="text"
@@ -34,5 +55,9 @@
         </p>
       </div>
     </section>
+    <script src="
+https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js
+"></script>
+    <script src="../js/log-in.js"></script>
   </body>
 </html>
