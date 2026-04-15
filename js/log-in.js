@@ -1,10 +1,11 @@
-const email = document.querySelector(".email__inp");
+const emails = document.querySelector(".email__inp");
 const pass = document.querySelector(".password__inp");
 const form = document.querySelector(".register__form");
 const load = document.querySelector(".loader__wrapper");
+const names = document.querySelector(".name__inp");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  logIn(email.value, pass.value);
+  logIn(emails.value, pass.value);
 });
 
 async function logIn(email, pass) {
@@ -59,6 +60,11 @@ async function logIn(email, pass) {
         window.location.href = "../index.html";
       },
     });
+    let userInfo = {
+      email: emails.value,
+      name: names.value,
+    };
+    localStorage.setItem("userInfo", JSON.stringify(userInfo));
     load.style.display = "none";
   } catch (error) {
     iziToast.error({

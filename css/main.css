@@ -1,383 +1,294 @@
 @charset "UTF-8";
 @font-face {
   font-family: "FONTSPRING DEMO - Integral CF";
-  src:
-    url("../fonts/FONTSPRINGDEMO-IntegralCFMediumItalic.woff2") format("woff2"),
-    url("../fonts/FONTSPRINGDEMO-IntegralCFMediumItalic.woff") format("woff");
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFMediumItalic.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFMediumItalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "FONTSPRING DEMO - Integral CF";
-  src:
-    url("../fonts/FONTSPRINGDEMO-IntegralCFMediumRegular.woff2") format("woff2"),
-    url("../fonts/FONTSPRINGDEMO-IntegralCFMediumRegular.woff") format("woff");
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFMediumRegular.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFMediumRegular.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "FONTSPRING DEMO - Integral CF";
-  src:
-    url("../fonts/FONTSPRINGDEMO-IntegralCFHeavyItalic.woff2") format("woff2"),
-    url("../fonts/FONTSPRINGDEMO-IntegralCFHeavyItalic.woff") format("woff");
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFHeavyItalic.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFHeavyItalic.woff") format("woff");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "FONTSPRING DEMO - Integral CF Demi";
-  src:
-    url("../fonts/FONTSPRINGDEMO-IntegralCFDemiBoldRegular.woff2")
-      format("woff2"),
-    url("../fonts/FONTSPRINGDEMO-IntegralCFDemiBoldRegular.woff") format("woff");
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFDemiBoldRegular.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFDemiBoldRegular.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "FONTSPRING DEMO - Integral CF Extra";
-  src:
-    url("../fonts/FONTSPRINGDEMO-IntegralCFExtraBoldItalic.woff2")
-      format("woff2"),
-    url("../fonts/FONTSPRINGDEMO-IntegralCFExtraBoldItalic.woff") format("woff");
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFExtraBoldItalic.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFExtraBoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "FONTSPRING DEMO - Integral CF Extra";
-  src:
-    url("../fonts/FONTSPRINGDEMO-IntegralCFExtraBoldRegular.woff2")
-      format("woff2"),
-    url("../fonts/FONTSPRINGDEMO-IntegralCFExtraBoldRegular.woff")
-      format("woff");
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFExtraBoldRegular.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFExtraBoldRegular.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "FONTSPRING DEMO - Integral CF Demi";
-  src:
-    url("../fonts/FONTSPRINGDEMO-IntegralCFDemiBoldItalic.woff2")
-      format("woff2"),
-    url("../fonts/FONTSPRINGDEMO-IntegralCFDemiBoldItalic.woff") format("woff");
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFDemiBoldItalic.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFDemiBoldItalic.woff") format("woff");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "FONTSPRING DEMO - Integral CF";
-  src:
-    url("../fonts/FONTSPRINGDEMO-IntegralCFBoldItalic.woff2") format("woff2"),
-    url("../fonts/FONTSPRINGDEMO-IntegralCFBoldItalic.woff") format("woff");
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFBoldItalic.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFBoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "FONTSPRING DEMO - Integral CF";
-  src:
-    url("../fonts/FONTSPRINGDEMO-IntegralCFBoldRegular.woff2") format("woff2"),
-    url("../fonts/FONTSPRINGDEMO-IntegralCFBoldRegular.woff") format("woff");
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFBoldRegular.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFBoldRegular.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "FONTSPRING DEMO - Integral CF";
-  src:
-    url("../fonts/FONTSPRINGDEMO-IntegralCFRegular.woff2") format("woff2"),
-    url("../fonts/FONTSPRINGDEMO-IntegralCFRegular.woff") format("woff");
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFRegular.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFRegular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "FONTSPRING DEMO - Integral CF";
-  src:
-    url("../fonts/FONTSPRINGDEMO-IntegralCFHeavyRegular.woff2") format("woff2"),
-    url("../fonts/FONTSPRINGDEMO-IntegralCFHeavyRegular.woff") format("woff");
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFHeavyRegular.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFHeavyRegular.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "FONTSPRING DEMO - Integral CF";
-  src:
-    url("../fonts/FONTSPRINGDEMO-IntegralCFItalic.woff2") format("woff2"),
-    url("../fonts/FONTSPRINGDEMO-IntegralCFItalic.woff") format("woff");
+  src: url("../fonts/FONTSPRINGDEMO-IntegralCFItalic.woff2") format("woff2"), url("../fonts/FONTSPRINGDEMO-IntegralCFItalic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/Satoshi-Bold.woff2") format("woff2"),
-    url("../fonts/Satoshi-Bold.woff") format("woff");
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/Satoshi-Black.woff2") format("woff2"),
-    url("../fonts/Satoshi-Black.woff") format("woff");
+  src: url("../fonts/Satoshi-Black.woff2") format("woff2"), url("../fonts/Satoshi-Black.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/Satoshi-BlackItalic.woff2") format("woff2"),
-    url("../fonts/Satoshi-BlackItalic.woff") format("woff");
+  src: url("../fonts/Satoshi-BlackItalic.woff2") format("woff2"), url("../fonts/Satoshi-BlackItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"),
-    url("../fonts/Satoshi-BoldItalic.woff") format("woff");
+  src: url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"), url("../fonts/Satoshi-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/Satoshi-Light.woff2") format("woff2"),
-    url("../fonts/Satoshi-Light.woff") format("woff");
+  src: url("../fonts/Satoshi-Light.woff2") format("woff2"), url("../fonts/Satoshi-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/Satoshi-Italic.woff2") format("woff2"),
-    url("../fonts/Satoshi-Italic.woff") format("woff");
+  src: url("../fonts/Satoshi-Italic.woff2") format("woff2"), url("../fonts/Satoshi-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "false";
-  src:
-    url("../fonts/false.woff2") format("woff2"),
-    url("../fonts/false.woff") format("woff");
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/false.woff2") format("woff2"),
-    url("../fonts/false.woff") format("woff");
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/false.woff2") format("woff2"),
-    url("../fonts/false.woff") format("woff");
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/Satoshi-Regular.woff2") format("woff2"),
-    url("../fonts/Satoshi-Regular.woff") format("woff");
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2"), url("../fonts/Satoshi-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi Variable";
-  src:
-    url("../fonts/SatoshiVariable-BoldItalic.woff2") format("woff2"),
-    url("../fonts/SatoshiVariable-BoldItalic.woff") format("woff");
+  src: url("../fonts/SatoshiVariable-BoldItalic.woff2") format("woff2"), url("../fonts/SatoshiVariable-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/false.woff2") format("woff2"),
-    url("../fonts/false.woff") format("woff");
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/Satoshi-Bold.woff2") format("woff2"),
-    url("../fonts/Satoshi-Bold.woff") format("woff");
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/Satoshi-LightItalic.woff2") format("woff2"),
-    url("../fonts/Satoshi-LightItalic.woff") format("woff");
+  src: url("../fonts/Satoshi-LightItalic.woff2") format("woff2"), url("../fonts/Satoshi-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi Variable";
-  src:
-    url("../fonts/SatoshiVariable-Bold.woff2") format("woff2"),
-    url("../fonts/SatoshiVariable-Bold.woff") format("woff");
+  src: url("../fonts/SatoshiVariable-Bold.woff2") format("woff2"), url("../fonts/SatoshiVariable-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/Satoshi-Medium.woff2") format("woff2"),
-    url("../fonts/Satoshi-Medium.woff") format("woff");
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"), url("../fonts/Satoshi-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "false";
-  src:
-    url("../fonts/false.woff2") format("woff2"),
-    url("../fonts/false.woff") format("woff");
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/false.woff2") format("woff2"),
-    url("../fonts/false.woff") format("woff");
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/Satoshi-MediumItalic.woff2") format("woff2"),
-    url("../fonts/Satoshi-MediumItalic.woff") format("woff");
+  src: url("../fonts/Satoshi-MediumItalic.woff2") format("woff2"), url("../fonts/Satoshi-MediumItalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/Satoshi-Black.woff2") format("woff2"),
-    url("../fonts/Satoshi-Black.woff") format("woff");
+  src: url("../fonts/Satoshi-Black.woff2") format("woff2"), url("../fonts/Satoshi-Black.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/Satoshi-BlackItalic.woff2") format("woff2"),
-    url("../fonts/Satoshi-BlackItalic.woff") format("woff");
+  src: url("../fonts/Satoshi-BlackItalic.woff2") format("woff2"), url("../fonts/Satoshi-BlackItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "false";
-  src:
-    url("../fonts/false.woff2") format("woff2"),
-    url("../fonts/false.woff") format("woff");
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "false";
-  src:
-    url("../fonts/false.woff2") format("woff2"),
-    url("../fonts/false.woff") format("woff");
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"),
-    url("../fonts/Satoshi-BoldItalic.woff") format("woff");
+  src: url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"), url("../fonts/Satoshi-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/false.woff2") format("woff2"),
-    url("../fonts/false.woff") format("woff");
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/false.woff2") format("woff2"),
-    url("../fonts/false.woff") format("woff");
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "false";
-  src:
-    url("../fonts/false.woff2") format("woff2"),
-    url("../fonts/false.woff") format("woff");
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/Satoshi-Light.woff2") format("woff2"),
-    url("../fonts/Satoshi-Light.woff") format("woff");
+  src: url("../fonts/Satoshi-Light.woff2") format("woff2"), url("../fonts/Satoshi-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src:
-    url("../fonts/Satoshi-Italic.woff2") format("woff2"),
-    url("../fonts/Satoshi-Italic.woff") format("woff");
+  src: url("../fonts/Satoshi-Italic.woff2") format("woff2"), url("../fonts/Satoshi-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "false";
-  src:
-    url("../fonts/false.woff2") format("woff2"),
-    url("../fonts/false.woff") format("woff");
+  src: url("../fonts/false.woff2") format("woff2"), url("../fonts/false.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -460,7 +371,7 @@ header {
 .header__list {
   display: flex;
   -moz-column-gap: 24px;
-  column-gap: 24px;
+       column-gap: 24px;
 }
 
 .header__item::-moz-selection {
@@ -485,7 +396,7 @@ header {
   padding-left: 16px;
   align-items: center;
   -moz-column-gap: 12px;
-  column-gap: 12px;
+       column-gap: 12px;
   background-color: #f0f0f0;
   border-radius: 62px;
 }
@@ -518,7 +429,8 @@ header {
   display: flex;
   align-items: center;
   -moz-column-gap: 14px;
-  column-gap: 14px;
+       column-gap: 14px;
+  position: relative;
 }
 
 .user__shop {
@@ -527,6 +439,38 @@ header {
 
 .user__pic {
   font-size: 22px;
+  cursor: pointer;
+}
+
+.user__modal_wrapper {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  top: 40px;
+  right: -93px;
+  padding: 20px 15px;
+  background-color: #000;
+  border-radius: 12px;
+  color: #fff;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.user__modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 12px;
+  position: relative;
+}
+
+.user__modal_del {
+  position: absolute;
+  top: -11px;
+  right: -3px;
   cursor: pointer;
 }
 
@@ -567,18 +511,10 @@ header {
 .hero {
   padding-top: 103px;
   padding-bottom: 136px;
-  background-image:
-    url("../../src/yulduzcha.png"), url("../../src/yulduzcha.png"),
-    url("../../src/couple.jpg");
+  background-image: url("../../src/yulduzcha.png"), url("../../src/yulduzcha.png"), url("../../src/couple.jpg");
   background-repeat: no-repeat;
-  background-size:
-    56px 56px,
-    104px 104px,
-    700px 1000px;
-  background-position:
-    calc(50% + 40px) calc(50% - 3px),
-    calc(50% + 850px) calc(50% - 200px),
-    calc(50% + 500px) calc(50% + 100px);
+  background-size: 56px 56px, 104px 104px, 700px 1000px;
+  background-position: calc(50% + 40px) calc(50% - 3px), calc(50% + 850px) calc(50% - 200px), calc(50% + 500px) calc(50% + 100px);
   background-color: #f2f0f1;
 }
 .hero .hero__info {
@@ -639,7 +575,7 @@ header {
 .hero .hero__list {
   display: flex;
   -moz-column-gap: 64px;
-  column-gap: 64px;
+       column-gap: 64px;
   font-family: "Satoshi";
 }
 .hero .hero__item {
@@ -663,14 +599,8 @@ header {
   .hero {
     padding-top: 40px;
     padding-bottom: 480px;
-    background-size:
-      44px 44px,
-      76px 76px,
-      500px 700px;
-    background-position:
-      calc(50% - 150px) calc(50% + 200px),
-      calc(50% + 150px) calc(50% + 100px),
-      50% calc(50% + 330px);
+    background-size: 44px 44px, 76px 76px, 500px 700px;
+    background-position: calc(50% - 150px) calc(50% + 200px), calc(50% + 150px) calc(50% + 100px), 50% calc(50% + 330px);
   }
   .hero .hero__title {
     line-height: 34px;
@@ -690,7 +620,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     -moz-column-gap: 27px;
-    column-gap: 27px;
+         column-gap: 27px;
     row-gap: 12px;
   }
   .hero .hero__subtitle {
@@ -798,7 +728,7 @@ header {
   display: flex;
   margin-top: 60px;
   -moz-column-gap: 80px;
-  column-gap: 80px;
+       column-gap: 80px;
 }
 
 .new__percentage {
@@ -825,7 +755,7 @@ header {
   border-radius: 20px;
   width: 126%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .new__rating {
@@ -833,7 +763,7 @@ header {
   margin-bottom: 8px;
   display: flex;
   -moz-column-gap: 10px;
-  column-gap: 10px;
+       column-gap: 10px;
   align-items: center;
 }
 
@@ -849,7 +779,7 @@ header {
 .new__price {
   display: flex;
   -moz-column-gap: 10px;
-  column-gap: 10px;
+       column-gap: 10px;
   align-items: center;
 }
 
@@ -916,14 +846,14 @@ header {
   }
   .new__rating {
     -moz-column-gap: 11px;
-    column-gap: 11px;
+         column-gap: 11px;
   }
   .new__real_price {
     font-size: 20px;
   }
   .new__list {
     -moz-column-gap: 11px;
-    column-gap: 11px;
+         column-gap: 11px;
     width: 374px;
     overflow-x: auto;
     overflow-y: hidden;
@@ -1143,7 +1073,7 @@ header {
   display: flex;
   align-items: center;
   -moz-column-gap: 5px;
-  column-gap: 5px;
+       column-gap: 5px;
 }
 
 .captions__subtitle::-moz-selection {
@@ -1238,7 +1168,7 @@ header {
   display: flex;
   align-items: center;
   -moz-column-gap: 214px;
-  column-gap: 214px;
+       column-gap: 214px;
 }
 
 .offer__title {
@@ -1354,7 +1284,7 @@ header {
 .footer__icon_list {
   display: flex;
   -moz-column-gap: 12px;
-  column-gap: 12px;
+       column-gap: 12px;
 }
 
 .footer__item_icon:hover {
@@ -1432,7 +1362,7 @@ header {
 .footer__pay_list {
   display: flex;
   -moz-column-gap: 12px;
-  column-gap: 12px;
+       column-gap: 12px;
 }
 
 .footer__pay_item {
@@ -1454,11 +1384,11 @@ header {
   }
   .footer__links {
     -moz-column-gap: 16px;
-    column-gap: 16px;
+         column-gap: 16px;
   }
   .footer__list {
     -moz-column-gap: 12px;
-    column-gap: 12px;
+         column-gap: 12px;
   }
   .footer__href {
     font-size: 14px;
@@ -1491,7 +1421,7 @@ header {
   justify-content: center;
   align-items: center;
   -moz-column-gap: 40px;
-  column-gap: 40px;
+       column-gap: 40px;
 }
 
 .product__left {
@@ -1509,7 +1439,7 @@ header {
 
 .product__img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
 }
 
@@ -1519,7 +1449,7 @@ header {
 
 .product__img_bg {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
 }
 
@@ -1544,7 +1474,7 @@ header {
   display: inline-flex;
   align-items: center;
   -moz-column-gap: 14px;
-  column-gap: 14px;
+       column-gap: 14px;
   margin: 14px 0;
   width: -moz-max-content;
   width: max-content;
@@ -1562,7 +1492,7 @@ header {
   display: flex;
   align-items: center;
   -moz-column-gap: 12px;
-  column-gap: 12px;
+       column-gap: 12px;
   font-family: "Satoshi";
 }
 
@@ -1610,7 +1540,7 @@ header {
 .color__list {
   display: flex;
   -moz-column-gap: 16px;
-  column-gap: 16px;
+       column-gap: 16px;
 }
 
 .color__item {
@@ -1643,7 +1573,7 @@ header {
 .size__list {
   display: flex;
   -moz-column-gap: 12px;
-  column-gap: 12px;
+       column-gap: 12px;
   margin-top: 16px;
 }
 
@@ -1667,13 +1597,13 @@ header {
   padding-top: 12px;
   display: flex;
   -moz-column-gap: 20px;
-  column-gap: 20px;
+       column-gap: 20px;
 }
 
 .right__counter {
   display: flex;
   -moz-column-gap: 38px;
-  column-gap: 38px;
+       column-gap: 38px;
   align-items: center;
   padding: 0px 20px;
   border-radius: 62px;
@@ -1718,7 +1648,7 @@ header {
   .product__list {
     flex-direction: row;
     -moz-column-gap: 12px;
-    column-gap: 12px;
+         column-gap: 12px;
   }
   .product__right {
     margin: 0 auto;
@@ -1748,7 +1678,7 @@ header {
   }
   .color__list {
     -moz-column-gap: 12px;
-    column-gap: 12px;
+         column-gap: 12px;
   }
   .color__item {
     width: 39px;
@@ -1769,11 +1699,11 @@ header {
   }
   .right__bottom {
     -moz-column-gap: 12px;
-    column-gap: 12px;
+         column-gap: 12px;
   }
   .right__counter {
     -moz-column-gap: 16px;
-    column-gap: 16px;
+         column-gap: 16px;
   }
   .right__minus {
     font-size: 20px;
@@ -1803,7 +1733,7 @@ header {
 .rew__left {
   display: flex;
   -moz-column-gap: 8px;
-  column-gap: 8px;
+       column-gap: 8px;
   align-items: center;
 }
 
@@ -1811,7 +1741,7 @@ header {
   font-family: "Satoshi";
   font-size: 24px;
   -moz-column-gap: #000;
-  column-gap: #000;
+       column-gap: #000;
   line-height: 24px;
 }
 
@@ -1826,7 +1756,7 @@ header {
   display: flex;
   align-items: center;
   -moz-column-gap: 10px;
-  column-gap: 10px;
+       column-gap: 10px;
 }
 
 .rew__set {
@@ -1847,7 +1777,7 @@ header {
 .rew__new {
   display: flex;
   -moz-column-gap: 21px;
-  column-gap: 21px;
+       column-gap: 21px;
   padding: 13px 20px;
   border-radius: 62px;
   align-items: center;
@@ -1914,7 +1844,7 @@ header {
   display: flex;
   align-items: center;
   -moz-column-gap: 6px;
-  column-gap: 6px;
+       column-gap: 6px;
   margin-top: 15px;
 }
 
@@ -1966,7 +1896,7 @@ header {
   }
   .rew__right {
     -moz-column-gap: 8px;
-    column-gap: 8px;
+         column-gap: 8px;
   }
   .rew__list {
     grid-template-columns: 1fr;
@@ -1975,7 +1905,7 @@ header {
   }
   .rew__left {
     -moz-column-gap: 6px;
-    column-gap: 6px;
+         column-gap: 6px;
   }
   .rew__item_top .star {
     font-size: 25px;
@@ -2101,7 +2031,7 @@ header {
   display: flex;
   margin-left: 80px;
   -moz-column-gap: 5px;
-  column-gap: 5px;
+       column-gap: 5px;
 }
 
 .icon__inner {
@@ -2236,7 +2166,7 @@ header {
 
 .add__product__img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-right: 1px solid #ccc;
 }
 
@@ -2259,7 +2189,7 @@ header {
   display: flex;
   align-items: center;
   -moz-column-gap: 3px;
-  column-gap: 3px;
+       column-gap: 3px;
 }
 
 .add__product__star_counter {
@@ -2275,7 +2205,7 @@ header {
 .add__product_icon_wrapper {
   display: flex;
   -moz-column-gap: 5px;
-  column-gap: 5px;
+       column-gap: 5px;
   padding-right: 10px;
   margin-left: 90px;
 }
@@ -2319,7 +2249,7 @@ header {
   align-items: center;
   justify-content: center;
   -moz-column-gap: 20px;
-  column-gap: 20px;
+       column-gap: 20px;
 }
 
 .delete__btn {
@@ -2455,8 +2385,8 @@ header {
   align-items: center;
   overflow: hidden;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   position: relative;
   font-size: var(--main-size);
   font-weight: 900;
@@ -2541,104 +2471,70 @@ header {
 }
 
 .loader .text span {
-  animation:
-    scrolling 2s cubic-bezier(0.1, 0.6, 0.9, 0.4) infinite,
-    shadow 2s cubic-bezier(0.1, 0.6, 0.9, 0.4) infinite;
+  animation: scrolling 2s cubic-bezier(0.1, 0.6, 0.9, 0.4) infinite, shadow 2s cubic-bezier(0.1, 0.6, 0.9, 0.4) infinite;
 }
 
 .loader .text:nth-child(1) span {
-  background: linear-gradient(
-    to right,
-    var(--text-color) 4%,
-    var(--shadow-color) 7%
-  );
+  background: linear-gradient(to right, var(--text-color) 4%, var(--shadow-color) 7%);
   background-size: 200% auto;
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
 }
 
 .loader .text:nth-child(2) span {
-  background: linear-gradient(
-    to right,
-    var(--text-color) 9%,
-    var(--shadow-color) 13%
-  );
+  background: linear-gradient(to right, var(--text-color) 9%, var(--shadow-color) 13%);
   background-size: 200% auto;
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
 }
 
 .loader .text:nth-child(3) span {
-  background: linear-gradient(
-    to right,
-    var(--text-color) 15%,
-    var(--shadow-color) 18%
-  );
+  background: linear-gradient(to right, var(--text-color) 15%, var(--shadow-color) 18%);
   background-size: 200% auto;
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
 }
 
 .loader .text:nth-child(4) span {
-  background: linear-gradient(
-    to right,
-    var(--text-color) 20%,
-    var(--shadow-color) 23%
-  );
+  background: linear-gradient(to right, var(--text-color) 20%, var(--shadow-color) 23%);
   background-size: 200% auto;
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
 }
 
 .loader .text:nth-child(6) span {
-  background: linear-gradient(
-    to right,
-    var(--shadow-color) 29%,
-    var(--text-color) 32%
-  );
+  background: linear-gradient(to right, var(--shadow-color) 29%, var(--text-color) 32%);
   background-size: 200% auto;
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
 }
 
 .loader .text:nth-child(7) span {
-  background: linear-gradient(
-    to right,
-    var(--shadow-color) 34%,
-    var(--text-color) 37%
-  );
+  background: linear-gradient(to right, var(--shadow-color) 34%, var(--text-color) 37%);
   background-size: 200% auto;
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
 }
 
 .loader .text:nth-child(8) span {
-  background: linear-gradient(
-    to right,
-    var(--shadow-color) 39%,
-    var(--text-color) 42%
-  );
+  background: linear-gradient(to right, var(--shadow-color) 39%, var(--text-color) 42%);
   background-size: 200% auto;
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
 }
 
 .loader .text:nth-child(9) span {
-  background: linear-gradient(
-    to right,
-    var(--shadow-color) 45%,
-    var(--text-color) 48%
-  );
+  background: linear-gradient(to right, var(--shadow-color) 45%, var(--text-color) 48%);
   background-size: 200% auto;
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   color: transparent;
 }
 
@@ -2711,4 +2607,4 @@ header {
 
 .register__link {
   color: #000;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

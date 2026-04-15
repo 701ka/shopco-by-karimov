@@ -46,6 +46,12 @@ elForm.addEventListener("submit", (e) => {
     });
 
   regFunc(firstNameVal, lastNameVal, emailVal, passVal, roleVal);
+  let userInfo = {
+    email: emailInp.value,
+    name: firstNameInp.value,
+  };
+
+  localStorage.setItem("userInfo", JSON.stringify(userInfo));
 });
 
 async function regFunc(firstname, lastname, email, pass, role) {
