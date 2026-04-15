@@ -25,7 +25,7 @@ function productsRender(arr, list) {
      <li class="add__product__item">
             <p class="add__product__number">${index + 1}</p>
             <img
-              src="${el.images[0]}"
+              src="${el.images && el.images.length > 0 ? el.images[0].trim() : "https://i.pinimg.com/736x/73/c5/e8/73c5e8348e8dbd832edaff69a1628497.jpg"}"
               width="100"
               height="88"
               alt=""
