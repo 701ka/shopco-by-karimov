@@ -50,7 +50,8 @@ async function logIn(email, pass) {
       throw new Error("Xatolik yana bir bor tekshirib koring");
     }
     const data = await res.json();
-    console.log(data);
+    localStorage.removeItem("token");
+    localStorage.setItem("token", data.token);
     iziToast.success({
       title: "Success",
       message: "Muvaffaqiyatli ro'yxatdan o'tdingiz",
