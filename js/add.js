@@ -5,7 +5,7 @@ const iconWrapper = document.querySelectorAll(".icon__inner");
 const ProductList = document.querySelector(".add__product");
 const delteModal = document.querySelector(".delete__alert");
 const modalYes = document.querySelector("#delete");
-const modalNo = document.querySelector("#noDelete");
+const modalNo = delteModal.querySelector("#noDelete");
 
 // list
 const productListEl = document.querySelector(".add__product__list");
