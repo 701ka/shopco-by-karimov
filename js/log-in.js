@@ -35,17 +35,6 @@ async function logIn(email, pass) {
         }),
       },
     );
-    if (email === "abdulloh@gmail.com" && pass === "12345678") {
-      iziToast.success({
-        title: "Success",
-        message: "Muvaffaqiyatli ro'yxatdan o'tdingiz",
-        position: "topRight",
-        timeout: 2000,
-        onClosing: function () {
-          window.location.href = "../html/";
-        },
-      });
-    }
     if (!res.ok) {
       throw new Error("Xatolik yana bir bor tekshirib koring");
     }
@@ -58,12 +47,16 @@ async function logIn(email, pass) {
       position: "topRight",
       timeout: 2000,
       onClosing: function () {
-        window.location.href = "../index.html";
+        if (email == "admin@gmail.com" || pass == "admin123") {
+          window.location.href = "/html/product-add.html";
+        } else {
+          window.location.href = "/index.html";
+        }
       },
     });
     let userInfo = {
-      email: emails.value,
-      name: names.value,
+      email: data.user.email,
+      name: data.user.firstName,
     };
     localStorage.setItem("userInfo", JSON.stringify(userInfo));
     load.style.display = "none";

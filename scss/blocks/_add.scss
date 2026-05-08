@@ -36,6 +36,7 @@
   font-family: $main-font;
   padding-bottom: 25px;
   font-size: 49px;
+  cursor: pointer;
 }
 .add__btn {
   padding: 18px 0;
@@ -129,7 +130,17 @@
   right: 0;
 }
 .add__modal_content {
+  position: relative;
   padding: 30px;
+}
+.add__modal_close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 32px;
+  line-height: 1;
+  background-color: transparent;
+  color: $main-color;
 }
 .add__modal_title {
   font-size: 24px;
@@ -145,6 +156,10 @@
   border-radius: 8px;
   border: 1px solid #ccc;
 }
+.add__textarea {
+  min-height: 80px;
+  resize: vertical;
+}
 .add__row {
   display: flex;
   gap: 10px;
@@ -154,12 +169,26 @@
   gap: 10px;
 }
 .add__upload {
+  position: relative;
   flex: 1;
   padding: 20px;
   background: white;
   text-align: center;
   border-radius: 10px;
   cursor: pointer;
+  overflow: hidden;
+}
+.add__file {
+  display: none;
+}
+.add__modal_icon,
+.add__upload_text {
+  position: relative;
+  z-index: 1;
+}
+.add__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 .add__submit {
   background: black;
@@ -233,7 +262,7 @@
   font-family: $second-font;
   font-size: $popular-font-size;
   border-right: 1px solid $grey;
-  padding: 30px 0;  
+  padding: 30px 0;
   flex: 2;
 }
 .delete__alert {

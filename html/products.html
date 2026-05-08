@@ -11,6 +11,10 @@
 
     <!-- css link -->
     <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css"
+    />
     <!-- end css link -->
 
     <!-- fontawesome link -->
@@ -28,6 +32,43 @@
     <!-- aos link -->
   </head>
   <body>
+    <div class="review__modal" id="reviewModal">
+      <div class="review__modal_content">
+        <button
+          type="button"
+          class="review__modal_close"
+          aria-label="Close review modal"
+        >
+          &times;
+        </button>
+        <h2 class="review__modal_title">Write a Review</h2>
+        <form class="review__form">
+          <input
+            type="text"
+            name="name"
+            class="review__input"
+            placeholder="Your name"
+            required
+          />
+          <input
+            type="number"
+            name="userRate"
+            class="review__input"
+            placeholder="Rate 1-5"
+            min="1"
+            max="5"
+            required
+          />
+          <textarea
+            name="comment"
+            class="review__input review__textarea"
+            placeholder="Comment"
+            required
+          ></textarea>
+          <button type="submit" class="review__submit">Send Review</button>
+        </form>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -169,8 +210,8 @@
                   <p class="rew__new_text">Latest</p>
                   <i class="fa-solid fa-chevron-down rew__new_icon"></i>
                 </div>
-                <button class="rew__btn">
-                  <a href="#" class="rew__link">Write a Review</a>
+                <button class="rew__btn" type="button">
+                  <span class="rew__link">Write a Review</span>
                 </button>
               </div>
             </div>
@@ -643,6 +684,7 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

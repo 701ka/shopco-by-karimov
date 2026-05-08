@@ -95,5 +95,8 @@ async function regFunc(firstname, lastname, email, pass, role) {
       timeout: 2000,
     });
   }
+  setTimeout(() => {
+    window.location.href = "log-in.html";
+  }, 2000);
   load.style.display = "none";
 }

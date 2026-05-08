@@ -66,6 +66,64 @@
   font-weight: 500;
   width: max-content;
 }
+.review__modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000066;
+  font-family: $second-font;
+}
+.review__modal.active {
+  display: flex;
+}
+.review__modal_content {
+  position: relative;
+  width: min(420px, calc(100% - 32px));
+  padding: 28px;
+  border-radius: 16px;
+  background-color: $bg-second-color;
+}
+.review__modal_close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 30px;
+  line-height: 1;
+  background-color: transparent;
+}
+.review__modal_title {
+  font-family: $main-font;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+.review__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.review__input {
+  padding: 12px 14px;
+  border: 1px solid #0000001a;
+  border-radius: 10px;
+  font-family: $second-font;
+}
+.review__textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.review__submit {
+  padding: 13px 18px;
+  border-radius: 62px;
+  color: $bg-second-color;
+  background-color: $main-color;
+}
+.review__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
 .rew__list {
   display: grid;
   grid-template-rows: repeat(3, 1fr);

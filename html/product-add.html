@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css"
+    />
     <!-- font awesome link -->
     <link
       rel="stylesheet"
@@ -19,25 +23,38 @@
   <body>
     <div class="add__modal" id="modal">
       <div class="add__modal_content">
+        <button type="button" class="add__modal_close" aria-label="Close modal">
+          &times;
+        </button>
         <h2 class="add__modal_title">ADDING NEW PRODUCT</h2>
 
         <form class="add__form">
           <input
             type="text"
-            name="name"
+            name="title"
             placeholder="Product Name"
             class="add__input"
+            required
           />
+          <textarea
+            name="description"
+            placeholder="Description"
+            class="add__input add__textarea"
+            required
+          ></textarea>
           <div class="add__upload_wrapper">
             <div class="add__upload">
+              <input type="file" accept="image/*" class="add__file" />
               <i class="fa-solid fa-cloud-arrow-down add__modal_icon"></i>
               <p class="add__upload_text">Upload</p>
             </div>
             <div class="add__upload">
+              <input type="file" accept="image/*" class="add__file" />
               <i class="fa-solid fa-cloud-arrow-down add__modal_icon"></i>
               <p class="add__upload_text">Upload</p>
             </div>
             <div class="add__upload">
+              <input type="file" accept="image/*" class="add__file" />
               <i class="fa-solid fa-cloud-arrow-down add__modal_icon"></i>
               <p class="add__upload_text">Upload</p>
             </div>
@@ -48,6 +65,8 @@
               name="price"
               placeholder="Price"
               class="add__input"
+              step="0.01"
+              required
             />
             <input
               type="number"
@@ -57,12 +76,35 @@
             />
           </div>
           <div class="add__row add__row_bot">
-            <select name="category" class="add__input">
-              <option selected disabled>Category</option>
+            <select name="category" class="add__input" required>
+              <option value="" selected disabled>Category</option>
+              <option value="men">Men</option>
+              <option value="women">Women</option>
+              <option value="kids">Kids</option>
             </select>
-            <select name="type" class="add__input">
-              <option selected disabled>Type</option>
+            <select name="type" class="add__input" required>
+              <option value="" selected disabled>Type</option>
+              <option value="hoodie">Hoodie</option>
+              <option value="t-shirt">T-shirt</option>
+              <option value="shirt">Shirt</option>
+              <option value="jeans">Jeans</option>
             </select>
+          </div>
+          <div class="add__row add__row_bot">
+            <input
+              type="text"
+              name="colors"
+              placeholder="Colors: black,gray"
+              class="add__input"
+              required
+            />
+            <input
+              type="text"
+              name="size"
+              placeholder="Size: S,M,L"
+              class="add__input"
+              required
+            />
           </div>
           <button type="submit" class="add__submit">+ Add product</button>
         </form>
@@ -221,6 +263,7 @@
         </ul>
       </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
     <script src="../js/add.js"></script>
   </body>
 </html>

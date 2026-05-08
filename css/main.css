@@ -742,6 +742,8 @@ header {
 .new__item {
   display: flex;
   flex-direction: column;
+  width: 295px;
+  flex: 0 0 295px;
 }
 .new__item:nth-child(2) .new__sale {
   padding: 6px 13px;
@@ -750,12 +752,21 @@ header {
   padding: 6px 13px;
 }
 
-.new__img {
-  height: 280px;
+.new__img_bg {
+  width: 295px;
+  height: 298px;
   border-radius: 20px;
-  width: 126%;
+  background-color: #f0eeed;
+  overflow: hidden;
+}
+
+.new__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 
 .new__rating {
@@ -771,6 +782,11 @@ header {
   font-size: 18px;
   text-transform: lowercase;
   margin-top: 12px;
+  min-height: 44px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .new__subtitle span {
   text-transform: uppercase;
@@ -821,6 +837,7 @@ header {
 
 .new__link_pr {
   color: inherit;
+  display: block;
 }
 
 @media (max-width: 391px) {
@@ -832,8 +849,16 @@ header {
     font-size: 32px;
   }
   .new__img {
-    height: 200px;
+    height: 100%;
+    width: 100%;
+  }
+  .new__img_bg,
+  .new__item {
     width: 198px;
+    flex-basis: 198px;
+  }
+  .new__img_bg {
+    height: 200px;
   }
   .new__subtitle {
     font-size: 16px;
@@ -1438,9 +1463,12 @@ header {
 }
 
 .product__img {
+  width: 152px;
+  height: 167px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .product__img:focus {
@@ -1448,9 +1476,12 @@ header {
 }
 
 .product__img_bg {
+  width: 444px;
+  height: 530px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
+  background-color: #f0eeed;
 }
 
 .product__right {
@@ -1805,6 +1836,74 @@ header {
   width: max-content;
 }
 
+.review__modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Satoshi";
+}
+
+.review__modal.active {
+  display: flex;
+}
+
+.review__modal_content {
+  position: relative;
+  width: min(420px, 100% - 32px);
+  padding: 28px;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.review__modal_close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 30px;
+  line-height: 1;
+  background-color: transparent;
+}
+
+.review__modal_title {
+  font-family: "FONTSPRING DEMO - Integral CF";
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.review__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.review__input {
+  padding: 12px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 10px;
+  font-family: "Satoshi";
+}
+
+.review__textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.review__submit {
+  padding: 13px 18px;
+  border-radius: 62px;
+  color: #fff;
+  background-color: #000;
+}
+
+.review__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .rew__list {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -1981,6 +2080,7 @@ header {
   font-family: "FONTSPRING DEMO - Integral CF";
   padding-bottom: 25px;
   font-size: 49px;
+  cursor: pointer;
 }
 
 .add__btn {
@@ -2089,7 +2189,18 @@ header {
 }
 
 .add__modal_content {
+  position: relative;
   padding: 30px;
+}
+
+.add__modal_close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 32px;
+  line-height: 1;
+  background-color: transparent;
+  color: #000000;
 }
 
 .add__modal_title {
@@ -2109,6 +2220,11 @@ header {
   border: 1px solid #ccc;
 }
 
+.add__textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
 .add__row {
   display: flex;
   gap: 10px;
@@ -2120,12 +2236,29 @@ header {
 }
 
 .add__upload {
+  position: relative;
   flex: 1;
   padding: 20px;
   background: white;
   text-align: center;
   border-radius: 10px;
   cursor: pointer;
+  overflow: hidden;
+}
+
+.add__file {
+  display: none;
+}
+
+.add__modal_icon,
+.add__upload_text {
+  position: relative;
+  z-index: 1;
+}
+
+.add__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .add__submit {
