@@ -2,7 +2,7 @@ const PRODUCTS_API = "https://shop-co-backend-k5f0.onrender.com/api/products";
 const API_ORIGIN = "https://shop-co-backend-k5f0.onrender.com";
 const FALLBACK_IMAGE =
   "https://i.pinimg.com/736x/73/c5/e8/73c5e8348e8dbd832edaff69a1628497.jpg";
-
+const TOKEN = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDVjODM1ZGFlZDE3OGE1NTQyYzdlZCIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiZmlyc3ROYW1lIjoiYWRtaW4iLCJsYXN0TmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzc4NjQ4NjM0LCJleHAiOjE3Nzg3MzUwMzR9.NV-zb3juHQrGhmgHb8SEknfRTh4Fq4eK5KH7rGOreY0`;
 function initRatings() {
   document.querySelectorAll(".rating").forEach((rating) => {
     const stars = rating.querySelectorAll(".star");
@@ -129,7 +129,9 @@ async function renderIndexProducts() {
   try {
     const res = await fetch(PRODUCTS_API);
     const data = await res.json();
-    const products = Array.isArray(data) ? data : data.products || data.data || [];
+    const products = Array.isArray(data)
+      ? data
+      : data.products || data.data || [];
 
     productLists.forEach((list, index) => {
       const start = index * 4;
@@ -342,7 +344,7 @@ function initReviewModal() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Accept: "application/json",
+          Authorization: `Bearer ${TOKEN}`,
         },
         body: JSON.stringify({
           name,
