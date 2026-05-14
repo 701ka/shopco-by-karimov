@@ -154,7 +154,9 @@ function setProductLoading(isLoading) {
 }
 
 async function renderIndexProducts() {
-  const productLists = document.querySelectorAll(".new__list:not(.search__list)");
+  const productLists = document.querySelectorAll(
+    ".new__list:not(.search__list)",
+  );
 
   if (!productLists.length) return;
 
@@ -251,7 +253,9 @@ async function renderSearchProducts(query = "") {
     const products = await getProducts();
     const searchValue = query.trim().toLowerCase();
     const filteredProducts = searchValue
-      ? products.filter((product) => getSearchText(product).includes(searchValue))
+      ? products.filter((product) =>
+          getSearchText(product).includes(searchValue),
+        )
       : products;
 
     count.textContent = `${filteredProducts.length} product found`;
@@ -300,7 +304,10 @@ function initHeaderSearch() {
   });
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && document.body.classList.contains("search-active")) {
+    if (
+      e.key === "Escape" &&
+      document.body.classList.contains("search-active")
+    ) {
       closeSearch();
     }
   });
@@ -458,7 +465,8 @@ function renderComments(comments = []) {
 
   reviewList.innerHTML = safeComments
     .map((review) => {
-      const name = review.name || review.userName || review.user?.firstName || "User";
+      const name =
+        review.name || review.userName || review.user?.firstName || "User";
       const comment = review.comment || review.text || "";
       const rate = review.userRate || review.rate || review.rating || 5;
       const date = formatReviewDate(review.createdAt || review.date);
@@ -650,12 +658,13 @@ function initReviewModal() {
       }
 
       showToast("success", "Review yuborildi");
-      const newReview = data.comment || data.data || {
-        name,
-        userRate,
-        comment,
-        createdAt: new Date().toISOString(),
-      };
+      const newReview = data.comment ||
+        data.data || {
+          name,
+          userRate,
+          comment,
+          createdAt: new Date().toISOString(),
+        };
       const comments = activeProduct ? getProductComments(activeProduct) : [];
 
       if (activeProduct) {
