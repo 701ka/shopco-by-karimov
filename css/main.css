@@ -474,6 +474,60 @@ header {
   cursor: pointer;
 }
 
+.search-results {
+  display: none;
+  padding: 36px 0 80px;
+}
+
+.search-active main > section:not(.search-results) {
+  display: none;
+}
+
+.search-active .search-results {
+  display: block;
+}
+
+.search-results__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.search-results__title {
+  font-family: "FONTSPRING DEMO - Integral CF";
+  font-size: 40px;
+}
+
+.search-results__close {
+  padding: 12px 24px;
+  border-radius: 62px;
+  background-color: #000;
+  color: #fff;
+  font-family: "Satoshi";
+}
+
+.search-results__count {
+  margin-top: 8px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Satoshi";
+}
+
+.search__list {
+  flex-wrap: wrap;
+  gap: 40px 26px;
+  align-items: flex-start;
+}
+
+.search-results__loading,
+.search-results__empty {
+  width: 100%;
+  padding: 60px 0;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Satoshi";
+}
+
 @media only screen and (max-width: 391px) {
   header {
     padding: 23px 0;
@@ -506,6 +560,20 @@ header {
   }
   .header__user-pic {
     margin-right: -40px;
+  }
+  .search-active .header__inp {
+    display: block;
+    width: 180px;
+  }
+  .search-results__title {
+    font-size: 28px;
+  }
+  .search-results__close {
+    padding: 10px 18px;
+  }
+  .search__list {
+    width: 100%;
+    gap: 24px 12px;
   }
 }
 .hero {
@@ -1142,12 +1210,10 @@ header {
     width: -moz-max-content;
     width: max-content;
   }
-  .caption__item:nth-child(1) {
-    display: inline-block;
-    row-gap: 12px;
-  }
   .caption__item {
-    display: none;
+    display: inline-block;
+    flex: 0 0 330px;
+    row-gap: 12px;
   }
   .caption__item {
     padding: 24px;
@@ -1442,6 +1508,7 @@ header {
 }
 
 .product__inner {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1449,6 +1516,44 @@ header {
        column-gap: 40px;
 }
 
+.product__inner.is-loading {
+  min-height: 530px;
+}
+
+.product__inner.is-loading > :not(.product__loader) {
+  visibility: hidden;
+}
+
+.product__loader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 14px;
+  font-family: "Satoshi";
+}
+
+.product__loader_spinner {
+  width: 54px;
+  height: 54px;
+  border: 5px solid #f0f0f0;
+  border-top-color: #000;
+  border-radius: 50%;
+  animation: product-loader 0.8s linear infinite;
+}
+
+.product__loader_text {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@keyframes product-loader {
+  to {
+    transform: rotate(360deg);
+  }
+}
 .product__left {
   display: flex;
   gap: 14px;
@@ -1921,6 +2026,28 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.1019607843);
 }
 
+.rew__item_loading {
+  min-height: 210px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #f8f8f8 37%, #f0f0f0 63%);
+  background-size: 400% 100%;
+  animation: review-loading 1.2s ease-in-out infinite;
+}
+
+.rew__item_empty {
+  grid-column: 1/-1;
+  min-height: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes review-loading {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 .rew__item_top {
   display: flex;
   align-items: center;
@@ -2200,7 +2327,7 @@ header {
   font-size: 32px;
   line-height: 1;
   background-color: transparent;
-  color: #000000;
+  color: #000;
 }
 
 .add__modal_title {

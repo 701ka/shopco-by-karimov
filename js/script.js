@@ -3,6 +3,8 @@ const API_ORIGIN = "https://shop-co-backend-k5f0.onrender.com";
 const FALLBACK_IMAGE =
   "https://i.pinimg.com/736x/73/c5/e8/73c5e8348e8dbd832edaff69a1628497.jpg";
 const TOKEN = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDVjODM1ZGFlZDE3OGE1NTQyYzdlZCIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiZmlyc3ROYW1lIjoiYWRtaW4iLCJsYXN0TmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzc4NjQ4NjM0LCJleHAiOjE3Nzg3MzUwMzR9.NV-zb3juHQrGhmgHb8SEknfRTh4Fq4eK5KH7rGOreY0`;
+let activeProduct = null;
+let productsCache = null;
 function initRatings() {
   document.querySelectorAll(".rating").forEach((rating) => {
     const stars = rating.querySelectorAll(".star");
@@ -121,17 +123,43 @@ function normalizeList(value) {
   return [];
 }
 
+function setProductLoading(isLoading) {
+  const productInner = document.querySelector(".product__inner");
+  const reviewList = document.querySelector(".rew__list");
+
+  if (!productInner) return;
+
+  productInner.classList.toggle("is-loading", isLoading);
+
+  if (isLoading) {
+    productInner.insertAdjacentHTML(
+      "afterbegin",
+      `
+        <div class="product__loader">
+          <span class="product__loader_spinner"></span>
+          <p class="product__loader_text">Loading product...</p>
+        </div>`,
+    );
+
+    if (reviewList) {
+      reviewList.innerHTML = `
+        <li class="rew__item rew__item_loading"></li>
+        <li class="rew__item rew__item_loading"></li>
+        <li class="rew__item rew__item_loading"></li>
+        <li class="rew__item rew__item_loading"></li>`;
+    }
+  } else {
+    productInner.querySelector(".product__loader")?.remove();
+  }
+}
+
 async function renderIndexProducts() {
-  const productLists = document.querySelectorAll(".new__list");
+  const productLists = document.querySelectorAll(".new__list:not(.search__list)");
 
   if (!productLists.length) return;
 
   try {
-    const res = await fetch(PRODUCTS_API);
-    const data = await res.json();
-    const products = Array.isArray(data)
-      ? data
-      : data.products || data.data || [];
+    const products = await getProducts();
 
     productLists.forEach((list, index) => {
       const start = index * 4;
@@ -153,11 +181,132 @@ async function renderIndexProducts() {
 renderIndexProducts();
 
 async function getProducts() {
+  if (productsCache) return productsCache;
+
   const res = await fetch(PRODUCTS_API);
   const data = await res.json();
 
-  return Array.isArray(data) ? data : data.products || data.data || [];
+  productsCache = Array.isArray(data) ? data : data.products || data.data || [];
+
+  return productsCache;
 }
+
+function createSearchSection() {
+  const main = document.querySelector("main");
+  let section = document.querySelector(".search-results");
+
+  if (!main) return null;
+  if (section) return section;
+
+  section = document.createElement("section");
+  section.className = "search-results";
+  section.innerHTML = `
+    <div class="container">
+      <div class="search-results__top">
+        <h2 class="search-results__title">Products</h2>
+        <button type="button" class="search-results__close">Close</button>
+      </div>
+      <p class="search-results__count"></p>
+      <ul class="new__list search__list"></ul>
+    </div>`;
+
+  main.prepend(section);
+
+  section
+    .querySelector(".search-results__close")
+    .addEventListener("click", closeSearch);
+
+  return section;
+}
+
+function getSearchText(product) {
+  return [
+    product.title,
+    product.name,
+    product.description,
+    product.category,
+    product.type,
+    product.colors,
+    product.size,
+  ]
+    .flat()
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
+async function renderSearchProducts(query = "") {
+  const section = createSearchSection();
+
+  if (!section) return;
+
+  const list = section.querySelector(".search__list");
+  const count = section.querySelector(".search-results__count");
+
+  document.body.classList.add("search-active");
+  list.innerHTML = `
+    <li class="search-results__loading">Loading products...</li>`;
+
+  try {
+    const products = await getProducts();
+    const searchValue = query.trim().toLowerCase();
+    const filteredProducts = searchValue
+      ? products.filter((product) => getSearchText(product).includes(searchValue))
+      : products;
+
+    count.textContent = `${filteredProducts.length} product found`;
+
+    if (!filteredProducts.length) {
+      list.innerHTML = `<li class="search-results__empty">Product topilmadi</li>`;
+      return;
+    }
+
+    list.innerHTML = filteredProducts.map(renderProductCard).join("");
+    initRatings();
+  } catch (error) {
+    console.log("Search products xatosi:", error.message);
+    count.textContent = "";
+    list.innerHTML = `<li class="search-results__empty">Productlarni olishda xatolik bor</li>`;
+  }
+}
+
+function closeSearch() {
+  const input = document.querySelector(".header__inp");
+
+  document.body.classList.remove("search-active");
+
+  if (input) {
+    input.value = "";
+  }
+}
+
+function initHeaderSearch() {
+  const input = document.querySelector(".header__inp");
+  const searchBox = document.querySelector(".header__input");
+
+  if (!input || !searchBox) return;
+
+  searchBox.addEventListener("click", () => {
+    input.focus();
+    renderSearchProducts(input.value);
+  });
+
+  input.addEventListener("focus", () => {
+    renderSearchProducts(input.value);
+  });
+
+  input.addEventListener("input", () => {
+    renderSearchProducts(input.value);
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && document.body.classList.contains("search-active")) {
+      closeSearch();
+    }
+  });
+}
+
+initHeaderSearch();
 
 function getProductImages(product) {
   const images = Array.isArray(product.images) ? product.images : [];
@@ -254,6 +403,141 @@ function renderProductDetail(product) {
     .join("");
 }
 
+function getProductComments(product) {
+  return (
+    product.comments ||
+    product.comment ||
+    product.reviews ||
+    product.productComments ||
+    []
+  );
+}
+
+function renderStars(rate = 5) {
+  const fullRate = Math.max(0, Math.min(5, Number(rate) || 0));
+
+  return Array.from({ length: 5 }, (_, index) => {
+    const activeClass = index < fullRate ? " active" : "";
+    return `<span class="star${activeClass}">&#9733;</span>`;
+  }).join("");
+}
+
+function formatReviewDate(value) {
+  if (!value) return "";
+
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) return "";
+
+  return `Posted on ${date.toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  })}`;
+}
+
+function renderComments(comments = []) {
+  const reviewList = document.querySelector(".rew__list");
+  const reviewCount = document.querySelector(".rew__num");
+
+  if (!reviewList) return;
+
+  const safeComments = Array.isArray(comments) ? comments : [];
+
+  if (reviewCount) {
+    reviewCount.textContent = `(${safeComments.length})`;
+  }
+
+  if (!safeComments.length) {
+    reviewList.innerHTML = `
+      <li class="rew__item rew__item_empty">
+        <p class="rew__text">No reviews yet. Be the first to write one.</p>
+      </li>`;
+    return;
+  }
+
+  reviewList.innerHTML = safeComments
+    .map((review) => {
+      const name = review.name || review.userName || review.user?.firstName || "User";
+      const comment = review.comment || review.text || "";
+      const rate = review.userRate || review.rate || review.rating || 5;
+      const date = formatReviewDate(review.createdAt || review.date);
+
+      return `
+        <li class="rew__item">
+          <div class="rew__item_top">
+            <div class="rew__rating">
+              <div class="rating">${renderStars(rate)}</div>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical rew__item_icon"></i>
+          </div>
+          <div class="rew__name">
+            <h4 class="rew__subtitle">${escapeHtml(name)}</h4>
+            <i class="fa-solid fa-check-circle rew__name_icon"></i>
+          </div>
+          <p class="rew__text">"${escapeHtml(comment)}"</p>
+          ${date ? `<p class="rew__date">${date}</p>` : ""}
+        </li>`;
+    })
+    .join("");
+}
+
+function shuffleItems(items) {
+  return [...items].sort(() => Math.random() - 0.5);
+}
+
+function collectProductComments(products) {
+  return products.flatMap((product) => {
+    const productTitle = product.title || product.name || "Product";
+
+    return getProductComments(product).map((comment) => ({
+      ...comment,
+      productTitle,
+    }));
+  });
+}
+
+function renderCaptionCard(comment) {
+  const name =
+    comment.name || comment.userName || comment.user?.firstName || "Customer";
+  const text = comment.comment || comment.text || "";
+  const rate = comment.userRate || comment.rate || comment.rating || 5;
+
+  return `
+    <li class="caption__item">
+      <div class="caption__item_inner">
+        <div class="rating">${renderStars(rate)}</div>
+        <div class="caption__name">
+          <h4 class="captions__subtitle">${escapeHtml(name)}</h4>
+          <i class="fa-solid fa-circle-check captions__icon"></i>
+        </div>
+        <p class="captions__text">"${escapeHtml(text)}"</p>
+      </div>
+    </li>`;
+}
+
+async function renderHappyCustomers() {
+  const captionsList = document.querySelector(".caption__list");
+
+  if (!captionsList) return;
+
+  try {
+    const products = await getProducts();
+    const comments = shuffleItems(collectProductComments(products))
+      .filter((comment) => comment.comment || comment.text)
+      .slice(0, 12);
+
+    if (!comments.length) return;
+
+    captionsList.innerHTML = comments.map(renderCaptionCard).join("");
+    initRatings();
+  } catch (error) {
+    console.log("Happy customers render xatosi:", error.message);
+  }
+}
+
+renderHappyCustomers();
+
 async function renderProductPage() {
   const params = new URLSearchParams(window.location.search);
   const productId = params.get("id");
@@ -261,6 +545,7 @@ async function renderProductPage() {
   if (!productId || !document.querySelector(".product__inner")) return;
 
   try {
+    setProductLoading(true);
     const products = await getProducts();
     const product = products.find((item) => getProductId(item) === productId);
 
@@ -270,8 +555,12 @@ async function renderProductPage() {
     }
 
     renderProductDetail(product);
+    activeProduct = product;
+    renderComments(getProductComments(product));
   } catch (error) {
     console.log("Product detail render xatosi:", error.message);
+  } finally {
+    setProductLoading(false);
   }
 }
 
@@ -361,6 +650,20 @@ function initReviewModal() {
       }
 
       showToast("success", "Review yuborildi");
+      const newReview = data.comment || data.data || {
+        name,
+        userRate,
+        comment,
+        createdAt: new Date().toISOString(),
+      };
+      const comments = activeProduct ? getProductComments(activeProduct) : [];
+
+      if (activeProduct) {
+        activeProduct.comments = [newReview, ...comments];
+      }
+
+      renderComments([newReview, ...comments]);
+
       form.reset();
       closeModal();
     } catch (error) {

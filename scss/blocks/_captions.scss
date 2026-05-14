@@ -96,11 +96,9 @@
     width: max-content;
   }
   .caption__item {
-    &:nth-child(1) {
-      display: inline-block;
-      row-gap: 12px;
-    }
-    display: none;
+    display: inline-block;
+    flex: 0 0 330px;
+    row-gap: 12px;
   }
   .caption__item {
     padding: 24px;

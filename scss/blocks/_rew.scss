@@ -139,6 +139,26 @@
   border-radius: 20px;
   border: 1px solid #0000001a;
 }
+.rew__item_loading {
+  min-height: 210px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #f8f8f8 37%, #f0f0f0 63%);
+  background-size: 400% 100%;
+  animation: review-loading 1.2s ease-in-out infinite;
+}
+.rew__item_empty {
+  grid-column: 1 / -1;
+  min-height: 120px;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes review-loading {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 .rew__item_top {
   display: flex;
   align-items: center;
