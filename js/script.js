@@ -2,7 +2,7 @@ const PRODUCTS_API = "https://shop-co-backend-k5f0.onrender.com/api/products";
 const API_ORIGIN = "https://shop-co-backend-k5f0.onrender.com";
 const FALLBACK_IMAGE =
   "https://i.pinimg.com/736x/73/c5/e8/73c5e8348e8dbd832edaff69a1628497.jpg";
-const TOKEN = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDVjODM1ZGFlZDE3OGE1NTQyYzdlZCIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiZmlyc3ROYW1lIjoiYWRtaW4iLCJsYXN0TmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzc4NjQ4NjM0LCJleHAiOjE3Nzg3MzUwMzR9.NV-zb3juHQrGhmgHb8SEknfRTh4Fq4eK5KH7rGOreY0`;
+const TOKEN = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDVjODM1ZGFlZDE3OGE1NTQyYzdlZCIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiZmlyc3ROYW1lIjoiYWRtaW4iLCJsYXN0TmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzc4ODI3MjM1LCJleHAiOjE3Nzg5MTM2MzV9.HxZz7-_vxOpwiqEQLnpDALuf0iJp1BtPVadneD7crw4`;
 let activeProduct = null;
 let productsCache = null;
 function initRatings() {
